@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FBF9F4;
+  --foreground: #24211D;
+  --ivory-pearl: #FBF9F4;
+  --warm-silk: #F7F3EA;
+  --champagne-veil: #EFE9DA;
+  --champagne-gold: #B09262;
+  --champagne-light: #C6AA78;
+  --charcoal-ink: #24211D;
+  --sand-ink: #6E685F;
+  --border-gold: rgba(176, 146, 98, 0.25);
+}
+
+@theme {
+  --color-ivory: #FBF9F4;
+  --color-warm-silk: #F7F3EA;
+  --color-champagne: #EFE9DA;
+  --color-gold: #B09262;
+  --color-gold-light: #C6AA78;
+  --color-charcoal: #24211D;
+  --color-sand: #6E685F;
+  --color-border-gold: rgba(176, 146, 98, 0.25);
+
+  --font-cormorant: "Cormorant Garamond", Georgia, serif;
+  --font-playfair: "Playfair Display", Georgia, serif;
+  --font-jakarta: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-editorial: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #FBF9F4;
+  color: #24211D;
+}
+
+body {
+  background-color: #FBF9F4;
+  color: #24211D;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar for Luxury Aesthetic */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #FBF9F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #B09262;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C6AA78;
+}
+
+/* Custom Luxury Utility Classes */
+.font-cormorant {
+  font-family: var(--font-serif);
+}
+
+.font-playfair {
+  font-family: var(--font-editorial);
+}
+
+.font-jakarta {
+  font-family: var(--font-sans);
+}
+
+.border-heritage {
+  border: 1px solid rgba(176, 146, 98, 0.25);
+}
+
+.shadow-luxury {
+  box-shadow: 0 16px 40px -12px rgba(36, 33, 29, 0.07);
+}
+
+/* Easing utility */
+.ease-luxury {
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Border Trail Animation Keyframes */
+@keyframes vdrBorderDash {
+  0% {
+    stroke-dashoffset: 540;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
