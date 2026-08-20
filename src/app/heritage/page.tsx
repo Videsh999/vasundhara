@@ -16,7 +16,7 @@ export default function HeritagePage() {
       subtitle: "Founded by Mrs. Vasundhara Kasaraneni",
       description:
         "In April 1997, visionary jewellery designer Mrs. Vasundhara Kasaraneni established the House of Vasundhara in Hyderabad with an uncompromising vision: reviving and celebrating ancient Indian goldsmithing techniques through timeless high jewellery.",
-      image: "https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&q=80&w=1200",
+      image: "/brand/vasundhara-royal-bride-portrait.jpg",
     },
     {
       number: "02",
@@ -24,7 +24,7 @@ export default function HeritagePage() {
       subtitle: "Human Artistry Over Machines",
       description:
         "Every Vasundhara creation is sculpted by hand. We partner with a hereditary network of master karigars across India's traditional jewellery hubs, preserving hand-chiseled Nakshi engraving, pure gold foil Kundan stone-setting, and delicate pearl stringing.",
-      image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=1200",
+      image: "/brand/vasundhara-emerald-diamond-kada.jpg",
     },
     {
       number: "03",
@@ -32,7 +32,7 @@ export default function HeritagePage() {
       subtitle: "Heritage Meets Modern Sophistication",
       description:
         "Our creations bridge the regal grandeur of Indian heritage with contemporary geometric balance. Each piece is designed not as a fleeting fashion item, but as an enduring family heirloom to be treasured across generations.",
-      image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=1200",
+      image: "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
     },
     {
       number: "04",
@@ -40,7 +40,7 @@ export default function HeritagePage() {
       subtitle: "Private Viewing in Jubilee Hills",
       description:
         "Located on Road No. 36, Jubilee Hills, Hyderabad, our flagship salon offers private viewing chambers where collectors, brides, and families receive bespoke guidance directly from senior family curators.",
-      image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=1200",
+      image: "/brand/vasundhara-masterpiece-jewellery.jpg",
     },
   ];
 

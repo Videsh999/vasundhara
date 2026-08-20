@@ -14,31 +14,31 @@ import {
 } from "@/lib/navigation/collections-menu";
 
 const SHOP_JEWELLERY_IMAGES: Record<string, string> = {
-  "shop-rings": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=800",
-  "shop-earrings": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800",
-  "shop-necklaces": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=800",
-  "shop-pendants": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=800",
-  "shop-bangles": "https://images.unsplash.com/photo-1611591475163-9a3d463e230c?auto=format&fit=crop&q=80&w=800",
-  "shop-bridal": "https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&q=80&w=800",
-  "shop-mangalsutra": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=80&w=800",
+  "shop-rings": "/brand/vasundhara-masterpiece-jewellery.jpg",
+  "shop-earrings": "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
+  "shop-necklaces": "/brand/vasundhara-temple-peacock-necklace.jpg",
+  "shop-pendants": "/brand/vasundhara-royal-bride-portrait.jpg",
+  "shop-bangles": "/brand/vasundhara-emerald-diamond-kada.jpg",
+  "shop-bridal": "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
+  "shop-mangalsutra": "/brand/vasundhara-temple-peacock-necklace.jpg",
 };
 
 const EXPLORE_COLLECTIONS_IMAGES: Record<string, string> = {
-  "col-high-jewellery": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=1000",
-  "col-diamond": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=1000",
-  "col-gold": "https://images.unsplash.com/photo-1611591475163-9a3d463e230c?auto=format&fit=crop&q=80&w=1000",
-  "col-polki": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=1000",
-  "col-kundan": "https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&q=80&w=1000",
-  "col-temple": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=1000",
-  "col-heirloom": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=1000",
-  "col-contemporary": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=1000",
+  "col-high-jewellery": "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
+  "col-diamond": "/brand/vasundhara-masterpiece-jewellery.jpg",
+  "col-gold": "/brand/vasundhara-emerald-diamond-kada.jpg",
+  "col-polki": "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
+  "col-kundan": "/brand/vasundhara-royal-bride-portrait.jpg",
+  "col-temple": "/brand/vasundhara-temple-peacock-necklace.jpg",
+  "col-heirloom": "/brand/vasundhara-ruby-diamond-bangles.jpg",
+  "col-contemporary": "/brand/vasundhara-emerald-diamond-kada.jpg",
 };
 
 const SIGNATURE_IMAGES: Record<string, string> = {
-  "sig-bespoke": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=1000",
-  "sig-bridal-couture": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=1000",
-  "sig-heritage": "https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&q=80&w=1000",
-  "sig-new-arrivals": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=1000",
+  "sig-bespoke": "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
+  "sig-bridal-couture": "/brand/vasundhara-royal-bride-portrait.jpg",
+  "sig-heritage": "/brand/vasundhara-temple-peacock-necklace.jpg",
+  "sig-new-arrivals": "/brand/vasundhara-ruby-diamond-bangles.jpg",
 };
 
 export default function CollectionsPage() {

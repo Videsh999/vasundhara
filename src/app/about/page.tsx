@@ -88,8 +88,8 @@ export default function AboutPage() {
           <div className="lg:col-span-6">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border border-[#8C734B]/25">
               <img
-                src="https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&q=80&w=1200"
-                alt="Vasundhara Diamond Roof Flagship Salon"
+                src="/brand/vasundhara-royal-bride-portrait.jpg"
+                alt="Vasundhara Diamond Roof Flagship Salon & Royal Heritage"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1C1A17]/60 via-transparent to-transparent opacity-60" />

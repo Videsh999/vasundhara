@@ -11,7 +11,7 @@ export function PrivateViewingSection() {
       {/* Subtle Background Visual */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=2000"
+          src="/brand/vasundhara-royal-bride-portrait.jpg"
           alt="Vasundhara Diamond Roof Salon Background"
           loading="lazy"
           className="w-full h-full object-cover opacity-20 filter brightness-75"

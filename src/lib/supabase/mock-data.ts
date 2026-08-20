@@ -196,7 +196,7 @@ export const MOCK_COLLECTIONS: CollectionItem[] = [
     description: "Classic. Elegant. Forever. Precision-cut diamond eternity creations and solitaire masterpieces.",
     story: "Created to celebrate love that endures forever, the Eternal Collection features flawless certified diamonds set in liquid-shine gold and platinum.",
     inspiration: "Timeless geometric balance and diamond brilliance.",
-    heroImage: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=1600",
+    heroImage: "/brand/vasundhara-masterpiece-jewellery.jpg",
     isFeatured: true,
     isPublished: true,
     displayOrder: 1,
@@ -209,7 +209,7 @@ export const MOCK_COLLECTIONS: CollectionItem[] = [
     description: "Inspired by Tradition. Regal uncut polki diamonds, Basra pearls, and emerald drops.",
     story: "Each heirloom is hand-sculpted over months by master karigars using centuries-old 24K gold foil encasement techniques.",
     inspiration: "Heritage Indian royal jewellery forms handcrafted by master artisans.",
-    heroImage: "/brand/vasundhara-masterpiece-jewellery.jpg",
+    heroImage: "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
     isFeatured: true,
     isPublished: true,
     displayOrder: 2,
@@ -222,7 +222,7 @@ export const MOCK_COLLECTIONS: CollectionItem[] = [
     description: "Beauty in Every Detail. Intricately studded gold bangles, kadas, and delicate daytime adornments.",
     story: "Effortless luxury sculpted in warm 22K gold, accented with brilliant pavé diamonds.",
     inspiration: "Flowing organic silhouettes and tactile gold textures.",
-    heroImage: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=1600",
+    heroImage: "/brand/vasundhara-emerald-diamond-kada.jpg",
     isFeatured: true,
     isPublished: true,
     displayOrder: 3,
@@ -235,7 +235,7 @@ export const MOCK_COLLECTIONS: CollectionItem[] = [
     description: "Radiant Like Stars. Floral diamond motifs and cascading luminous gemstones.",
     story: "Star-like constellations of pear and marquise diamonds designed for radiant gala evenings.",
     inspiration: "Celestial night skies and blooming jasmine blossoms in diamond form.",
-    heroImage: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=1600",
+    heroImage: "/brand/vasundhara-ruby-diamond-bangles.jpg",
     isFeatured: true,
     isPublished: true,
     displayOrder: 4,
@@ -248,7 +248,7 @@ export const MOCK_COLLECTIONS: CollectionItem[] = [
     description: "Royal bridal chokers, multi-tiered uncut diamond rani haars, and heirloom neckpieces encrusted with rare South Sea pearls and Zambian emerald drop jewels.",
     story: "Inspired by the legendary bridal traditions of South India, this collection revives imperial splendour.",
     inspiration: "Architectural motifs and courtly archways, layered with Basra pearls and unheated Zambian emerald drops.",
-    heroImage: "/brand/vasundhara-masterpiece-jewellery.jpg",
+    heroImage: "/brand/vasundhara-royal-bride-portrait.jpg",
     isFeatured: true,
     isPublished: true,
     displayOrder: 5,
@@ -274,40 +274,41 @@ export const MOCK_JEWELLERY: JewelleryItem[] = [
       "Pearls": "Basra South Sea Pearls",
       "Craftsmanship": "Hand-Set Kundan & Nakshi Encasement"
     },
-    primaryImage: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=1200",
+    primaryImage: "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
     galleryMedia: [
-      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=1600",
-      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=1600",
-      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=1600",
-      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=1600"
+      "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
+      "/brand/vasundhara-royal-bride-portrait.jpg",
+      "/brand/vasundhara-emerald-diamond-kada.jpg",
+      "/brand/vasundhara-masterpiece-jewellery.jpg"
     ],
     isFeatured: true,
     isPublished: true,
     collectionSlug: "nizam-bridal-heritage",
     model3DEnabled: true,
-    model3DPoster: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=1600"
+    model3DPoster: "/brand/vasundhara-nizam-emerald-polki-suite.jpg"
   },
   {
     id: "jewel-2",
-    title: "Solitaire Symphony Cascade Earrings",
+    title: "Solitaire Symphony Bridal Grand Suite",
     slug: "solitaire-symphony-earrings",
     code: "VDR-DM-042",
     category: "Diamond",
-    karat: "18K White Gold",
-    diamondCarat: 14.2,
-    description: "Ethereal chandelier earrings featuring 28 pear-cut solitaires cascading smoothly to reflect light with extraordinary fire and brilliance.",
+    karat: "18K Yellow & White Gold",
+    diamondCarat: 18.5,
+    description: "An extraordinary high bridal suite complete with necklace, earrings, pavé bangles, and solitaire ring crafted with flawless natural diamonds.",
     inspiration: "Modern gala elegance engineered to catch and scatter ambient light with fluid movement.",
     specifications: {
-      "Gold Purity": "18K White Gold",
-      "Gold Weight": "38 grams",
+      "Gold Purity": "18K Gold",
+      "Gold Weight": "115 grams",
       "Diamond Color": "D-E Colorless",
       "Diamond Clarity": "VVS1 Flawless",
-      "Carat Weight": "14.20 Total Carats"
+      "Carat Weight": "18.50 Total Carats"
     },
-    primaryImage: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=1200",
+    primaryImage: "/brand/vasundhara-masterpiece-jewellery.jpg",
     galleryMedia: [
-      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=1600",
-      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=1600"
+      "/brand/vasundhara-masterpiece-jewellery.jpg",
+      "/brand/vasundhara-emerald-diamond-kada.jpg",
+      "/brand/vasundhara-ruby-diamond-bangles.jpg"
     ],
     isFeatured: true,
     isPublished: true,
@@ -315,24 +316,24 @@ export const MOCK_JEWELLERY: JewelleryItem[] = [
   },
   {
     id: "jewel-3",
-    title: "Imperial Heritage Polki Rani Haar",
+    title: "Burmese Ruby & Diamond Heritage Kadas",
     slug: "imperial-polki-rani-haar",
     code: "VDR-PK-108",
-    category: "Polki",
-    karat: "22K Gold",
-    diamondCarat: 88.0,
-    description: "A monumental seven-strand polki diamond rani haar interspersed with carved Burmese rubies and handmade gold Nakshi beads.",
+    category: "Ruby",
+    karat: "18K White Gold & Platinum",
+    diamondCarat: 32.0,
+    description: "A monumental twin pair of cushion-cut Pigeon Blood Burmese ruby and diamond bangles set in master filigree scrollwork.",
     inspiration: "Courtly regalia handed down through centuries of royal Indian heritage.",
     specifications: {
-      "Gold Purity": "22K Yellow Gold",
-      "Gold Weight": "310 grams",
-      "Polki Carat": "88.00 Carats",
-      "Ruby Weight": "120 Carats Carved Rubies"
+      "Gold Purity": "18K White Gold",
+      "Gold Weight": "95 grams (Pair)",
+      "Ruby Weight": "45.00 Carats Unheated Rubies",
+      "Diamond Weight": "32.00 Carats VVS Diamonds"
     },
-    primaryImage: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=1200",
+    primaryImage: "/brand/vasundhara-ruby-diamond-bangles.jpg",
     galleryMedia: [
-      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=1600",
-      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=1600"
+      "/brand/vasundhara-ruby-diamond-bangles.jpg",
+      "/brand/vasundhara-emerald-diamond-kada.jpg"
     ],
     isFeatured: true,
     isPublished: true,
@@ -340,22 +341,23 @@ export const MOCK_JEWELLERY: JewelleryItem[] = [
   },
   {
     id: "jewel-4",
-    title: "Sacred Nakshi Temple Kada",
+    title: "Sacred Nakshi Peacock & Basra Pearl Haar",
     slug: "sacred-nakshi-temple-kada",
     code: "VDR-TP-088",
     category: "Temple",
     karat: "22K Gold",
-    description: "A pair of solid 22K antique gold bangles hand-carved with sacred temple motifs, inset with cabochon rubies and natural pearls.",
+    description: "A solid 22K antique gold long necklace featuring sculpted peacock and sacred motifs, Basra pearls, jade beads, and ruby medallion.",
     inspiration: "Southern Indian sacred temple iconography handcrafted by master heritage artisans.",
     specifications: {
       "Gold Purity": "22K Solid Yellow Gold",
-      "Gold Weight": "140 grams (Pair)",
-      "Gemstones": "Cabochon Rubies & Basra Pearls",
+      "Gold Weight": "165 grams",
+      "Gemstones": "Cabochon Rubies, Emeralds & Basra Pearls",
       "Finish": "Antique Nakshi Patina"
     },
-    primaryImage: "https://images.unsplash.com/photo-1611591475163-9a3d463e230c?auto=format&fit=crop&q=80&w=1200",
+    primaryImage: "/brand/vasundhara-temple-peacock-necklace.jpg",
     galleryMedia: [
-      "https://images.unsplash.com/photo-1611591475163-9a3d463e230c?auto=format&fit=crop&q=80&w=1600"
+      "/brand/vasundhara-temple-peacock-necklace.jpg",
+      "/brand/vasundhara-royal-bride-portrait.jpg"
     ],
     isFeatured: true,
     isPublished: true,
@@ -377,11 +379,11 @@ export const MOCK_EXPERIENCES: ExperienceItem[] = [
     description: "An exclusive invitation-only soirée presenting Vasundhara's 2026 high bridal diamond heirlooms amidst the imperial splendor of Falaknuma Palace.",
     story: "Set against the marble courtyards and velvet drawing rooms of Taj Falaknuma Palace, the 2026 Royal Bridal Soiree brings together distinguished patrons and connoisseurs of fine jewellery. Patrons experience live karigar goldsmithing demonstrations, champagne receptions, and private chamber viewings.",
     curatorialStatement: "A celebration of South Indian heritage where historic architecture frames the brilliance of natural syndicate polki gems.",
-    coverImage: "https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&q=80&w=1600",
+    coverImage: "/brand/vasundhara-royal-bride-portrait.jpg",
     galleryMedia: [
-      "https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&q=80&w=1600",
-      "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1600",
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=1600"
+      "/brand/vasundhara-royal-bride-portrait.jpg",
+      "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
+      "/brand/vasundhara-masterpiece-jewellery.jpg"
     ],
     isFeatured: true,
     isPublished: true,
@@ -398,12 +400,13 @@ export const MOCK_EXPERIENCES: ExperienceItem[] = [
     location: "Armani Hotel, Burj Khalifa, Dubai",
     venueDetails: "Private Salon 1, Executive Suite level",
     description: "A private preview of rare D-flawless solitaires, unheated ruby chokers, and royal uncut polki masterpieces for international collectors.",
-    story: "Taking the legacy of Hyderabad goldsmithing to international shores, Vasundhara presents a curated exhibition inside the Armani Hotel Dubai. International patrons receive personal consultations with master curators.",
-    curatorialStatement: "Where ancient goldsmithing techniques meet contemporary global luxury.",
-    coverImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=1600",
+    story: "Hosted in the sky suites of Burj Khalifa, the Dubai exhibition marks our international showcase for discerning royal patrons in the UAE and Middle East.",
+    curatorialStatement: "Cross-continental high jewellery dialogue connecting Golconda diamond lineages to Middle Eastern collector aesthetics.",
+    coverImage: "/brand/vasundhara-ruby-diamond-bangles.jpg",
     galleryMedia: [
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=1600",
-      "https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&q=80&w=1600"
+      "/brand/vasundhara-ruby-diamond-bangles.jpg",
+      "/brand/vasundhara-emerald-diamond-kada.jpg",
+      "/brand/vasundhara-masterpiece-jewellery.jpg"
     ],
     isFeatured: true,
     isPublished: true,

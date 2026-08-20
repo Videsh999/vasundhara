@@ -13,52 +13,52 @@ export interface SignatureCollectionsSectionProps {
 
 const VASUNDHARA_CAROUSEL_IMAGES: RoundCarouselImage[] = [
   {
-    src: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=800",
-    title: "SOLITAIRE RINGS",
-    subtitle: "Eternal Brilliance",
-    slug: "diamond-jewellery",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=800",
-    title: "KUNDAN & EMERALD",
-    subtitle: "Atelier Masterpiece",
-    slug: "kundan",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800",
-    title: "DIAMOND DROPS",
-    subtitle: "Sculptural Earrings",
-    slug: "diamond-jewellery",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=800",
-    title: "TEMPLE HERITAGE",
-    subtitle: "22K Pure Nakshi Gold",
-    slug: "temple-jewellery",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1611591475163-9a3d463e230c?auto=format&fit=crop&q=80&w=800",
-    title: "GOLD KADA",
-    subtitle: "Handcrafted Movement",
-    slug: "gold-jewellery",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&q=80&w=800",
-    title: "BRIDAL POLKI",
-    subtitle: "Heirloom Ceremonial",
+    src: "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
+    title: "NIZAM POLKI & EMERALDS",
+    subtitle: "Imperial Bridal Choker Suite",
     slug: "bridal",
   },
   {
-    src: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=80&w=800",
-    title: "CONTEMPORARY",
-    subtitle: "Modern Geometries",
-    slug: "contemporary",
+    src: "/brand/vasundhara-royal-bride-portrait.jpg",
+    title: "TEMPLE HERITAGE",
+    subtitle: "22K Antique Nakshi Lineage",
+    slug: "temple-jewellery",
   },
   {
-    src: "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&q=80&w=800",
-    title: "PEARL VEIL",
-    subtitle: "Natural Sea Pearls",
+    src: "/brand/vasundhara-emerald-diamond-kada.jpg",
+    title: "EMERALD & DIAMOND KADA",
+    subtitle: "Basra Pearl & Polki Openwork",
+    slug: "gold-jewellery",
+  },
+  {
+    src: "/brand/vasundhara-masterpiece-jewellery.jpg",
+    title: "ROYAL BRIDAL SUITE",
+    subtitle: "Handcrafted Gold & Solitaires",
+    slug: "bridal",
+  },
+  {
+    src: "/brand/vasundhara-ruby-diamond-bangles.jpg",
+    title: "BURMESE RUBY KADAS",
+    subtitle: "Cushion-Cut Pigeon Blood Rubies",
     slug: "high-jewellery",
+  },
+  {
+    src: "/brand/vasundhara-temple-peacock-necklace.jpg",
+    title: "NAKSHI PEACOCK HAAR",
+    subtitle: "Basra Pearls & Sacred Motifs",
+    slug: "temple-jewellery",
+  },
+  {
+    src: "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
+    title: "KUNDAN & POLKI",
+    subtitle: "Atelier Handcrafted Masterpieces",
+    slug: "kundan",
+  },
+  {
+    src: "/brand/vasundhara-emerald-diamond-kada.jpg",
+    title: "HIGH JEWELLERY KADA",
+    subtitle: "24K Gold Foil Encasement",
+    slug: "contemporary",
   },
 ];
 

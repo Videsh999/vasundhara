@@ -61,8 +61,8 @@ export function BespokeJourneySection() {
             className="lg:col-span-7 relative aspect-[16/11] sm:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-[#B09262]/30 group bg-[#FDFBF7]"
           >
             <img
-              src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=1600"
-              alt="Vasundhara Bespoke Jewellery Commission"
+              src="/brand/vasundhara-nizam-emerald-polki-suite.jpg"
+              alt="Vasundhara Bespoke Jewellery Commission - Regal Nizam Suite"
               loading="lazy"
               className="w-full h-full object-cover transform transition-transform duration-800 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.035]"
             />

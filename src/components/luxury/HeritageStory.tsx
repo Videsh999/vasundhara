@@ -51,8 +51,8 @@ export function HeritageStory() {
           >
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-luxury border border-[#8C734B]/20">
               <img
-                src="/brand/vasundhara-masterpiece-jewellery.jpg"
-                alt="Vasundhara Masterpiece Diamond & Gold Bridal Suite"
+                src="/brand/vasundhara-royal-bride-portrait.jpg"
+                alt="Vasundhara Royal Bridal Heritage Portrait"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1C1A17]/60 via-transparent to-transparent" />

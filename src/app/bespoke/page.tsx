@@ -17,7 +17,7 @@ const BESPOKE_STAGES = [
     description:
       "The bespoke journey begins with an intimate dialogue. We explore your family heritage, aesthetic preferences, and the emotion of the occasion.",
     details: "Private Dialogue • Gemstone Curation • Occasion Blueprint",
-    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=1000",
+    image: "/brand/vasundhara-royal-bride-portrait.jpg",
     icon: Compass,
   },
   {
@@ -27,7 +27,7 @@ const BESPOKE_STAGES = [
     description:
       "Our senior curators present rare uncut syndicate polki diamonds, D-flawless solitaires, and natural gemstone parcels curated specifically for your commission.",
     details: "Gem Selection • Proportion Balance • Metal Purity (18K/22K)",
-    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=1000",
+    image: "/brand/vasundhara-masterpiece-jewellery.jpg",
     icon: Gem,
   },
   {
@@ -37,7 +37,7 @@ const BESPOKE_STAGES = [
     description:
       "Master illustrators hand-paint multiple full-scale gouache parchment renderings, translating abstract ideas into sculptural high jewellery.",
     details: "Parchment Art • Ergonomic Blueprint • 1:1 Scale Proofs",
-    image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=1000",
+    image: "/brand/vasundhara-temple-peacock-necklace.jpg",
     icon: Feather,
   },
   {
@@ -47,7 +47,7 @@ const BESPOKE_STAGES = [
     description:
       "Hereditary master artisans hand-chisel the Nakshi gold structures, craft pure 24K gold foil Kundan encasements, and hand-string natural Basra pearls.",
     details: "Zero Machine Work • Pure Hand Setting • Devotional Craft",
-    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=1000",
+    image: "/brand/vasundhara-emerald-diamond-kada.jpg",
     icon: Hammer,
   },
   {
@@ -57,7 +57,7 @@ const BESPOKE_STAGES = [
     description:
       "Your finished heirloom is unveiled in a private chamber at our Jubilee Hills salon, accompanied by certified documentation and custom vault casing.",
     details: "Private Chamber Unveiling • Certified Documentation • Heirloom Casing",
-    image: "https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&q=80&w=1000",
+    image: "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
     icon: Gift,
   },
 ];

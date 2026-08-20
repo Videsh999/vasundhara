@@ -7,15 +7,14 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { GalleryTunnel } from "@/components/core/gallery-tunnel";
 
 const FEATURED_TUNNEL_IMAGES = [
+  "/brand/vasundhara-royal-bride-portrait.jpg",
+  "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
   "/brand/vasundhara-masterpiece-jewellery.jpg",
-  "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=1200",
-  "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=1200",
-  "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=1200",
-  "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=1200",
-  "https://images.unsplash.com/photo-1611591475163-9a3d463e230c?auto=format&fit=crop&q=80&w=1200",
-  "https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&q=80&w=1200",
-  "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=80&w=1200",
-  "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&q=80&w=1200",
+  "/brand/vasundhara-emerald-diamond-kada.jpg",
+  "/brand/vasundhara-ruby-diamond-bangles.jpg",
+  "/brand/vasundhara-temple-peacock-necklace.jpg",
+  "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
+  "/brand/vasundhara-masterpiece-jewellery.jpg",
 ];
 
 export function FeaturedJewellerySection() {

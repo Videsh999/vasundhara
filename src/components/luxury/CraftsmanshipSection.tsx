@@ -39,8 +39,8 @@ export function CraftsmanshipSection() {
             >
               {/* Macro Diamond Photography */}
               <img
-                src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=1200"
-                alt="Vasundhara Master Craftsmanship Close-up"
+                src="/brand/vasundhara-emerald-diamond-kada.jpg"
+                alt="Vasundhara Master Craftsmanship Emerald and Diamond Kada"
                 className="w-full h-full object-cover object-center transform transition-transform duration-800 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.035]"
                 loading="lazy"
               />
