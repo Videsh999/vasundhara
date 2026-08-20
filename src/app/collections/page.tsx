@@ -15,30 +15,30 @@ import {
 
 const SHOP_JEWELLERY_IMAGES: Record<string, string> = {
   "shop-rings": "/brand/vasundhara-masterpiece-jewellery.jpg",
-  "shop-earrings": "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
-  "shop-necklaces": "/brand/vasundhara-temple-peacock-necklace.jpg",
-  "shop-pendants": "/brand/vasundhara-royal-bride-portrait.jpg",
+  "shop-earrings": "/brand/vasundhara-emerald-solitaire-bib-suite.jpg",
+  "shop-necklaces": "/brand/vasundhara-crimson-bridal-emerald.jpg",
+  "shop-pendants": "/brand/vasundhara-imperial-jade-high-jewellery.jpg",
   "shop-bangles": "/brand/vasundhara-emerald-diamond-kada.jpg",
-  "shop-bridal": "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
+  "shop-bridal": "/brand/vasundhara-royal-bridal-trinity.jpg",
   "shop-mangalsutra": "/brand/vasundhara-temple-peacock-necklace.jpg",
 };
 
 const EXPLORE_COLLECTIONS_IMAGES: Record<string, string> = {
-  "col-high-jewellery": "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
+  "col-high-jewellery": "/brand/vasundhara-emerald-solitaire-bib-suite.jpg",
   "col-diamond": "/brand/vasundhara-masterpiece-jewellery.jpg",
   "col-gold": "/brand/vasundhara-emerald-diamond-kada.jpg",
-  "col-polki": "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
-  "col-kundan": "/brand/vasundhara-royal-bride-portrait.jpg",
+  "col-polki": "/brand/vasundhara-nizam-rajmata-polki-portrait.jpg",
+  "col-kundan": "/brand/vasundhara-crimson-bridal-emerald.jpg",
   "col-temple": "/brand/vasundhara-temple-peacock-necklace.jpg",
   "col-heirloom": "/brand/vasundhara-ruby-diamond-bangles.jpg",
-  "col-contemporary": "/brand/vasundhara-emerald-diamond-kada.jpg",
+  "col-contemporary": "/brand/vasundhara-imperial-jade-high-jewellery.jpg",
 };
 
 const SIGNATURE_IMAGES: Record<string, string> = {
-  "sig-bespoke": "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
-  "sig-bridal-couture": "/brand/vasundhara-royal-bride-portrait.jpg",
-  "sig-heritage": "/brand/vasundhara-temple-peacock-necklace.jpg",
-  "sig-new-arrivals": "/brand/vasundhara-ruby-diamond-bangles.jpg",
+  "sig-bespoke": "/brand/vasundhara-crimson-bridal-emerald.jpg",
+  "sig-bridal-couture": "/brand/vasundhara-royal-bridal-trinity.jpg",
+  "sig-heritage": "/brand/vasundhara-nizam-rajmata-polki-portrait.jpg",
+  "sig-new-arrivals": "/brand/vasundhara-emerald-solitaire-bib-suite.jpg",
 };
 
 export default function CollectionsPage() {

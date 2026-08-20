@@ -13,28 +13,34 @@ export interface SignatureCollectionsSectionProps {
 
 const VASUNDHARA_CAROUSEL_IMAGES: RoundCarouselImage[] = [
   {
-    src: "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
-    title: "NIZAM POLKI & EMERALDS",
-    subtitle: "Imperial Bridal Choker Suite",
+    src: "/brand/vasundhara-royal-bridal-trinity.jpg",
+    title: "ROYAL BRIDAL TRINITY",
+    subtitle: "Grand Nizam Troussier Suite",
     slug: "bridal",
   },
   {
-    src: "/brand/vasundhara-royal-bride-portrait.jpg",
-    title: "TEMPLE HERITAGE",
-    subtitle: "22K Antique Nakshi Lineage",
+    src: "/brand/vasundhara-emerald-solitaire-bib-suite.jpg",
+    title: "COLOMBIAN EMERALD MESH",
+    subtitle: "D-Flawless Solitaire Bib Suite",
+    slug: "high-jewellery",
+  },
+  {
+    src: "/brand/vasundhara-crimson-bridal-emerald.jpg",
+    title: "CRIMSON BRIDAL POLKI",
+    subtitle: "Multi-Tiered Emerald Bead Choker",
+    slug: "kundan",
+  },
+  {
+    src: "/brand/vasundhara-imperial-jade-high-jewellery.jpg",
+    title: "IMPERIAL JADE & DIAMOND",
+    subtitle: "High Contemporary Joaillerie",
+    slug: "contemporary",
+  },
+  {
+    src: "/brand/vasundhara-nizam-rajmata-polki-portrait.jpg",
+    title: "NAKSHI RAJMATA SUITE",
+    subtitle: "Antique Gold & Syndicate Polki",
     slug: "temple-jewellery",
-  },
-  {
-    src: "/brand/vasundhara-emerald-diamond-kada.jpg",
-    title: "EMERALD & DIAMOND KADA",
-    subtitle: "Basra Pearl & Polki Openwork",
-    slug: "gold-jewellery",
-  },
-  {
-    src: "/brand/vasundhara-masterpiece-jewellery.jpg",
-    title: "ROYAL BRIDAL SUITE",
-    subtitle: "Handcrafted Gold & Solitaires",
-    slug: "bridal",
   },
   {
     src: "/brand/vasundhara-ruby-diamond-bangles.jpg",
@@ -43,22 +49,16 @@ const VASUNDHARA_CAROUSEL_IMAGES: RoundCarouselImage[] = [
     slug: "high-jewellery",
   },
   {
+    src: "/brand/vasundhara-emerald-diamond-kada.jpg",
+    title: "EMERALD & POLKI KADA",
+    subtitle: "24K Kundan Foil Encasement",
+    slug: "gold-jewellery",
+  },
+  {
     src: "/brand/vasundhara-temple-peacock-necklace.jpg",
-    title: "NAKSHI PEACOCK HAAR",
+    title: "SACRED PEACOCK HAAR",
     subtitle: "Basra Pearls & Sacred Motifs",
     slug: "temple-jewellery",
-  },
-  {
-    src: "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
-    title: "KUNDAN & POLKI",
-    subtitle: "Atelier Handcrafted Masterpieces",
-    slug: "kundan",
-  },
-  {
-    src: "/brand/vasundhara-emerald-diamond-kada.jpg",
-    title: "HIGH JEWELLERY KADA",
-    subtitle: "24K Gold Foil Encasement",
-    slug: "contemporary",
   },
 ];
 

@@ -7,14 +7,14 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { GalleryTunnel } from "@/components/core/gallery-tunnel";
 
 const FEATURED_TUNNEL_IMAGES = [
-  "/brand/vasundhara-royal-bride-portrait.jpg",
-  "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
-  "/brand/vasundhara-masterpiece-jewellery.jpg",
-  "/brand/vasundhara-emerald-diamond-kada.jpg",
+  "/brand/vasundhara-royal-bridal-trinity.jpg",
+  "/brand/vasundhara-emerald-solitaire-bib-suite.jpg",
+  "/brand/vasundhara-crimson-bridal-emerald.jpg",
+  "/brand/vasundhara-imperial-jade-high-jewellery.jpg",
+  "/brand/vasundhara-nizam-rajmata-polki-portrait.jpg",
   "/brand/vasundhara-ruby-diamond-bangles.jpg",
+  "/brand/vasundhara-emerald-diamond-kada.jpg",
   "/brand/vasundhara-temple-peacock-necklace.jpg",
-  "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
-  "/brand/vasundhara-masterpiece-jewellery.jpg",
 ];
 
 export function FeaturedJewellerySection() {

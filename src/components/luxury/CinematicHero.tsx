@@ -16,7 +16,7 @@ interface CinematicHeroProps {
 
 export function CinematicHero({
   videoUrl = "/videos/vasundhara_hero_video.mp4",
-  posterUrl = "/brand/vasundhara-royal-bride-portrait.jpg",
+  posterUrl = "/brand/vasundhara-royal-bridal-trinity.jpg",
   eyebrow = "ESTABLISHED 1997 • HYDERABAD",
   title = "VASUNDHARA",
   headline = "Where Heritage Meets Timeless Brilliance",

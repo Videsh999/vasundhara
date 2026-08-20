@@ -11,10 +11,10 @@ export function PrivateViewingSection() {
       {/* Subtle Background Visual */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/brand/vasundhara-royal-bride-portrait.jpg"
+          src="/brand/vasundhara-imperial-jade-high-jewellery.jpg"
           alt="Vasundhara Diamond Roof Salon Background"
           loading="lazy"
-          className="w-full h-full object-cover opacity-20 filter brightness-75"
+          className="w-full h-full object-cover opacity-25 filter brightness-75"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#24211D] via-[#24211D]/85 to-[#24211D]" />
       </div>

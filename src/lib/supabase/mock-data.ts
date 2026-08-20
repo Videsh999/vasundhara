@@ -196,7 +196,7 @@ export const MOCK_COLLECTIONS: CollectionItem[] = [
     description: "Classic. Elegant. Forever. Precision-cut diamond eternity creations and solitaire masterpieces.",
     story: "Created to celebrate love that endures forever, the Eternal Collection features flawless certified diamonds set in liquid-shine gold and platinum.",
     inspiration: "Timeless geometric balance and diamond brilliance.",
-    heroImage: "/brand/vasundhara-masterpiece-jewellery.jpg",
+    heroImage: "/brand/vasundhara-emerald-solitaire-bib-suite.jpg",
     isFeatured: true,
     isPublished: true,
     displayOrder: 1,
@@ -209,7 +209,7 @@ export const MOCK_COLLECTIONS: CollectionItem[] = [
     description: "Inspired by Tradition. Regal uncut polki diamonds, Basra pearls, and emerald drops.",
     story: "Each heirloom is hand-sculpted over months by master karigars using centuries-old 24K gold foil encasement techniques.",
     inspiration: "Heritage Indian royal jewellery forms handcrafted by master artisans.",
-    heroImage: "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
+    heroImage: "/brand/vasundhara-royal-bridal-trinity.jpg",
     isFeatured: true,
     isPublished: true,
     displayOrder: 2,
@@ -248,7 +248,7 @@ export const MOCK_COLLECTIONS: CollectionItem[] = [
     description: "Royal bridal chokers, multi-tiered uncut diamond rani haars, and heirloom neckpieces encrusted with rare South Sea pearls and Zambian emerald drop jewels.",
     story: "Inspired by the legendary bridal traditions of South India, this collection revives imperial splendour.",
     inspiration: "Architectural motifs and courtly archways, layered with Basra pearls and unheated Zambian emerald drops.",
-    heroImage: "/brand/vasundhara-royal-bride-portrait.jpg",
+    heroImage: "/brand/vasundhara-crimson-bridal-emerald.jpg",
     isFeatured: true,
     isPublished: true,
     displayOrder: 5,
@@ -258,7 +258,7 @@ export const MOCK_COLLECTIONS: CollectionItem[] = [
 export const MOCK_JEWELLERY: JewelleryItem[] = [
   {
     id: "jewel-1",
-    title: "The Royal Emerald Choker",
+    title: "The Royal Emerald & Polki Choker Suite",
     slug: "royal-nizam-emerald-choker",
     code: "VDR-BD-001",
     category: "Bridal",
@@ -274,40 +274,41 @@ export const MOCK_JEWELLERY: JewelleryItem[] = [
       "Pearls": "Basra South Sea Pearls",
       "Craftsmanship": "Hand-Set Kundan & Nakshi Encasement"
     },
-    primaryImage: "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
+    primaryImage: "/brand/vasundhara-crimson-bridal-emerald.jpg",
     galleryMedia: [
-      "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
-      "/brand/vasundhara-royal-bride-portrait.jpg",
-      "/brand/vasundhara-emerald-diamond-kada.jpg",
-      "/brand/vasundhara-masterpiece-jewellery.jpg"
+      "/brand/vasundhara-crimson-bridal-emerald.jpg",
+      "/brand/vasundhara-royal-bridal-trinity.jpg",
+      "/brand/vasundhara-nizam-rajmata-polki-portrait.jpg",
+      "/brand/vasundhara-emerald-solitaire-bib-suite.jpg"
     ],
     isFeatured: true,
     isPublished: true,
     collectionSlug: "nizam-bridal-heritage",
     model3DEnabled: true,
-    model3DPoster: "/brand/vasundhara-nizam-emerald-polki-suite.jpg"
+    model3DPoster: "/brand/vasundhara-crimson-bridal-emerald.jpg"
   },
   {
     id: "jewel-2",
-    title: "Solitaire Symphony Bridal Grand Suite",
+    title: "Colombian Emerald & Solitaire Mesh Bib Suite",
     slug: "solitaire-symphony-earrings",
     code: "VDR-DM-042",
     category: "Diamond",
-    karat: "18K Yellow & White Gold",
-    diamondCarat: 18.5,
-    description: "An extraordinary high bridal suite complete with necklace, earrings, pavé bangles, and solitaire ring crafted with flawless natural diamonds.",
+    karat: "18K White Gold",
+    diamondCarat: 38.5,
+    description: "An extraordinary high jewellery masterpiece featuring an expansive diamond mesh bib necklace fringed with vivid green Colombian emerald drops and matching chandelier earrings.",
     inspiration: "Modern gala elegance engineered to catch and scatter ambient light with fluid movement.",
     specifications: {
-      "Gold Purity": "18K Gold",
-      "Gold Weight": "115 grams",
+      "Gold Purity": "18K White Gold",
+      "Gold Weight": "145 grams",
       "Diamond Color": "D-E Colorless",
       "Diamond Clarity": "VVS1 Flawless",
-      "Carat Weight": "18.50 Total Carats"
+      "Carat Weight": "38.50 Total Carats",
+      "Emeralds": "Natural Colombian Emeralds"
     },
-    primaryImage: "/brand/vasundhara-masterpiece-jewellery.jpg",
+    primaryImage: "/brand/vasundhara-emerald-solitaire-bib-suite.jpg",
     galleryMedia: [
-      "/brand/vasundhara-masterpiece-jewellery.jpg",
-      "/brand/vasundhara-emerald-diamond-kada.jpg",
+      "/brand/vasundhara-emerald-solitaire-bib-suite.jpg",
+      "/brand/vasundhara-imperial-jade-high-jewellery.jpg",
       "/brand/vasundhara-ruby-diamond-bangles.jpg"
     ],
     isFeatured: true,
@@ -333,7 +334,8 @@ export const MOCK_JEWELLERY: JewelleryItem[] = [
     primaryImage: "/brand/vasundhara-ruby-diamond-bangles.jpg",
     galleryMedia: [
       "/brand/vasundhara-ruby-diamond-bangles.jpg",
-      "/brand/vasundhara-emerald-diamond-kada.jpg"
+      "/brand/vasundhara-emerald-diamond-kada.jpg",
+      "/brand/vasundhara-imperial-jade-high-jewellery.jpg"
     ],
     isFeatured: true,
     isPublished: true,
@@ -341,27 +343,52 @@ export const MOCK_JEWELLERY: JewelleryItem[] = [
   },
   {
     id: "jewel-4",
-    title: "Sacred Nakshi Peacock & Basra Pearl Haar",
+    title: "Sacred Nakshi & Syndicate Polki Rajmata Suite",
     slug: "sacred-nakshi-temple-kada",
     code: "VDR-TP-088",
     category: "Temple",
     karat: "22K Gold",
-    description: "A solid 22K antique gold long necklace featuring sculpted peacock and sacred motifs, Basra pearls, jade beads, and ruby medallion.",
-    inspiration: "Southern Indian sacred temple iconography handcrafted by master heritage artisans.",
+    description: "A solid 22K antique gold bridal choker and grand rani haar featuring hand-chiseled Nakshi engraving, syndicate uncut polki diamonds, and Basra pearl tassels.",
+    inspiration: "Southern Indian sacred temple iconography handcrafted by hereditary master artisans.",
     specifications: {
       "Gold Purity": "22K Solid Yellow Gold",
-      "Gold Weight": "165 grams",
-      "Gemstones": "Cabochon Rubies, Emeralds & Basra Pearls",
+      "Gold Weight": "210 grams",
+      "Gemstones": "Natural Syndicate Polki & Basra Pearls",
       "Finish": "Antique Nakshi Patina"
     },
-    primaryImage: "/brand/vasundhara-temple-peacock-necklace.jpg",
+    primaryImage: "/brand/vasundhara-nizam-rajmata-polki-portrait.jpg",
     galleryMedia: [
-      "/brand/vasundhara-temple-peacock-necklace.jpg",
-      "/brand/vasundhara-royal-bride-portrait.jpg"
+      "/brand/vasundhara-nizam-rajmata-polki-portrait.jpg",
+      "/brand/vasundhara-royal-bridal-trinity.jpg",
+      "/brand/vasundhara-temple-peacock-necklace.jpg"
     ],
     isFeatured: true,
     isPublished: true,
     collectionSlug: "temple-gold-heirlooms"
+  },
+  {
+    id: "jewel-5",
+    title: "Imperial Jade & Solitaire High Contemporary Suite",
+    slug: "imperial-jade-contemporary-suite",
+    code: "VDR-HC-099",
+    category: "Contemporary",
+    karat: "18K White & Yellow Gold",
+    description: "A rare collector piece combining carved imperial jade with a sculptural golden eagle, diamond butterfly choker, and mint tourmaline drops.",
+    inspiration: "Art deco nature motifs meeting royal Asian jade lapidary craftsmanship.",
+    specifications: {
+      "Gold Purity": "18K Gold",
+      "Gold Weight": "82 grams",
+      "Gemstones": "Carved Imperial Jade & Natural Mint Tourmalines",
+      "Diamonds": "14.50 Carats Round Brilliant & Marquise"
+    },
+    primaryImage: "/brand/vasundhara-imperial-jade-high-jewellery.jpg",
+    galleryMedia: [
+      "/brand/vasundhara-imperial-jade-high-jewellery.jpg",
+      "/brand/vasundhara-emerald-solitaire-bib-suite.jpg"
+    ],
+    isFeatured: true,
+    isPublished: true,
+    collectionSlug: "contemporary"
   }
 ];
 
