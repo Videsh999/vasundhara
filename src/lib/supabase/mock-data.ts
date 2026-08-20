@@ -406,11 +406,11 @@ export const MOCK_EXPERIENCES: ExperienceItem[] = [
     description: "An exclusive invitation-only soirée presenting Vasundhara's 2026 high bridal diamond heirlooms amidst the imperial splendor of Falaknuma Palace.",
     story: "Set against the marble courtyards and velvet drawing rooms of Taj Falaknuma Palace, the 2026 Royal Bridal Soiree brings together distinguished patrons and connoisseurs of fine jewellery. Patrons experience live karigar goldsmithing demonstrations, champagne receptions, and private chamber viewings.",
     curatorialStatement: "A celebration of South Indian heritage where historic architecture frames the brilliance of natural syndicate polki gems.",
-    coverImage: "/brand/vasundhara-royal-bride-portrait.jpg",
+    coverImage: "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
     galleryMedia: [
-      "/brand/vasundhara-royal-bride-portrait.jpg",
       "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
-      "/brand/vasundhara-masterpiece-jewellery.jpg"
+      "/brand/vasundhara-royal-bridal-trinity.jpg",
+      "/brand/vasundhara-nizam-rajmata-polki-portrait.jpg"
     ],
     isFeatured: true,
     isPublished: true,
@@ -429,11 +429,11 @@ export const MOCK_EXPERIENCES: ExperienceItem[] = [
     description: "A private preview of rare D-flawless solitaires, unheated ruby chokers, and royal uncut polki masterpieces for international collectors.",
     story: "Hosted in the sky suites of Burj Khalifa, the Dubai exhibition marks our international showcase for discerning royal patrons in the UAE and Middle East.",
     curatorialStatement: "Cross-continental high jewellery dialogue connecting Golconda diamond lineages to Middle Eastern collector aesthetics.",
-    coverImage: "/brand/vasundhara-ruby-diamond-bangles.jpg",
+    coverImage: "/brand/vasundhara-imperial-jade-high-jewellery.jpg",
     galleryMedia: [
-      "/brand/vasundhara-ruby-diamond-bangles.jpg",
-      "/brand/vasundhara-emerald-diamond-kada.jpg",
-      "/brand/vasundhara-masterpiece-jewellery.jpg"
+      "/brand/vasundhara-imperial-jade-high-jewellery.jpg",
+      "/brand/vasundhara-emerald-solitaire-bib-suite.jpg",
+      "/brand/vasundhara-crimson-bridal-emerald.jpg"
     ],
     isFeatured: true,
     isPublished: true,
