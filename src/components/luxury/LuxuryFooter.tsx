@@ -2,8 +2,9 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Sparkles, MapPin, Phone, Mail, ArrowRight } from "lucide-react";
+import { Sparkles, MapPin, Phone, Mail, ArrowRight, ShieldCheck, Crown, Gem, Award, ArrowUp } from "lucide-react";
 import { AppointmentModal } from "@/components/luxury/AppointmentModal";
+import { VasundharaLogo } from "@/components/luxury/VasundharaLogo";
 
 export function LuxuryFooter() {
   const [appointmentOpen, setAppointmentOpen] = useState(false);
@@ -17,184 +18,252 @@ export function LuxuryFooter() {
     }
   };
 
+  const scrollToTop = () => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <>
-      <footer className="bg-[#1C1A17] text-[#FDFBF7] pt-20 pb-12 relative overflow-hidden border-t border-[#B09262]/25 select-none">
-        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 relative z-10 space-y-16">
-          
-          {/* Top Newsletter / Invitation Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 pb-16 border-b border-[#B09262]/20 items-center">
-            <div className="lg:col-span-6 space-y-2">
-              <span className="font-sans text-[10px] uppercase tracking-[0.35em] text-[#C6AA78] font-medium">
-                PRIVATE DISPATCH & ROYAL CATALOGUES
-              </span>
-              <h3 className="font-serif text-2xl sm:text-4xl text-[#FDFBF7] font-light">
-                Receive Invitations to Private Previews
-              </h3>
-              <p className="font-sans text-xs text-[#EFE9DA]/70 leading-relaxed max-w-lg">
-                Subscribe for private invitations to Vasundhara high jewellery soirees, private salon previews, and seasonal heirloom releases.
-              </p>
-            </div>
+      <footer className="bg-gradient-to-b from-[#191714] via-[#141210] to-[#0D0C0A] text-[#FDFBF7] pt-24 pb-14 relative overflow-hidden border-t border-[#B09262]/30 select-none">
+        {/* Majestic Architectural Watermark */}
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-[0.025] select-none">
+          <span className="font-serif text-[24vw] uppercase tracking-widest text-[#B09262] whitespace-nowrap">
+            VASUNDHARA
+          </span>
+        </div>
 
-            <div className="lg:col-span-6">
-              {subscribed ? (
-                <div className="p-4 bg-[#B09262]/20 border border-[#B09262] rounded-xl text-center">
-                  <span className="font-serif text-lg text-[#EFE9DA]">Welcome to the Vasundhara Patron Circle</span>
-                  <p className="font-sans text-xs text-[#EFE9DA]/70 mt-1">Private dispatches will arrive in your inbox shortly.</p>
+        {/* Ambient Subtle Gold Glow */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-[#B09262]/5 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 relative z-10 space-y-20">
+          
+          {/* 1. VIP DISPATCH & ROYAL CIRCLE INVITATION CARD */}
+          <div className="relative rounded-3xl p-8 sm:p-12 lg:p-14 bg-gradient-to-r from-[#24211D]/90 via-[#2A2621]/95 to-[#24211D]/90 border border-[#B09262]/40 shadow-2xl overflow-hidden">
+            {/* Corner Gold Flourish Accents */}
+            <div className="absolute top-3 left-3 w-6 h-6 border-t-2 border-l-2 border-[#B09262]/40 rounded-tl-lg" />
+            <div className="absolute top-3 right-3 w-6 h-6 border-t-2 border-r-2 border-[#B09262]/40 rounded-tr-lg" />
+            <div className="absolute bottom-3 left-3 w-6 h-6 border-b-2 border-l-2 border-[#B09262]/40 rounded-bl-lg" />
+            <div className="absolute bottom-3 right-3 w-6 h-6 border-b-2 border-r-2 border-[#B09262]/40 rounded-br-lg" />
+
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+              <div className="lg:col-span-6 space-y-3">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#B09262]/20 border border-[#B09262]/40 text-[#D4AF37]">
+                  <Crown className="w-3.5 h-3.5" />
+                  <span className="font-sans text-[9px] uppercase tracking-[0.35em] font-semibold">
+                    EXCLUSIVE PATRON PRIVILEGES
+                  </span>
                 </div>
-              ) : (
-                <form onSubmit={handleNewsletter} className="flex flex-col sm:flex-row gap-3">
-                  <input
-                    type="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Enter your email address..."
-                    className="flex-1 px-5 py-3.5 bg-[#FDFBF7]/5 border border-[#B09262]/30 rounded-full font-sans text-xs text-white placeholder-[#EFE9DA]/40 focus:outline-none focus:border-[#B09262]"
-                  />
-                  <button
-                    type="submit"
-                    className="px-8 py-3.5 bg-[#B09262] hover:bg-[#C6AA78] text-[#FDFBF7] font-sans text-xs uppercase tracking-[0.2em] font-medium rounded-full transition-colors shrink-0 flex items-center justify-center gap-2 cursor-pointer"
-                  >
-                    <span>REQUEST ACCESS</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
-                </form>
-              )}
+                <h3 className="font-serif text-2xl sm:text-4xl text-[#FDFBF7] font-light leading-snug">
+                  Invitations to Private Salon Previews
+                </h3>
+                <p className="font-sans text-xs text-[#EFE9DA]/70 leading-relaxed max-w-lg">
+                  Join our distinguished circle for private dispatches, rare Colombian emerald releases, bespoke bridal trousseau consultations, and invitations to annual Nizam high jewellery exhibitions.
+                </p>
+              </div>
+
+              <div className="lg:col-span-6">
+                {subscribed ? (
+                  <div className="p-6 bg-[#B09262]/20 border border-[#B09262]/60 rounded-2xl text-center space-y-1">
+                    <span className="font-serif text-xl text-[#FDFBF7] block">Welcome to the Vasundhara Patron Circle</span>
+                    <p className="font-sans text-xs text-[#EFE9DA]/70">Your royal invitation and dispatch dossier will arrive shortly.</p>
+                  </div>
+                ) : (
+                  <form onSubmit={handleNewsletter} className="flex flex-col sm:flex-row gap-3">
+                    <input
+                      type="email"
+                      required
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Enter your private email address..."
+                      className="flex-1 px-6 py-4 bg-[#141210]/90 border border-[#B09262]/40 rounded-full font-sans text-xs text-white placeholder-[#EFE9DA]/40 focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] shadow-inner"
+                    />
+                    <button
+                      type="submit"
+                      className="px-8 py-4 bg-gradient-to-r from-[#B09262] via-[#C6AA78] to-[#B09262] text-[#141210] font-sans text-xs uppercase tracking-[0.22em] font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-xl shrink-0 flex items-center justify-center gap-2 cursor-pointer"
+                    >
+                      <span>REQUEST INVITATION</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </button>
+                  </form>
+                )}
+              </div>
             </div>
           </div>
 
-          {/* Core Footer Links Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
-            {/* Column 1: Official Brand Identity */}
-            <div className="lg:col-span-2 space-y-4">
-              <Link href="/" className="inline-block space-y-2">
-                <img
-                  src="/brand/vasundhara-emblem-tight.png"
-                  alt="Vasundhara Emblem"
-                  className="h-12 w-auto object-contain brightness-110"
-                />
-                <img
-                  src="/brand/vasundhara-wordmark-tight.png"
-                  alt="VASUNDHARA"
-                  className="h-5 w-auto object-contain brightness-110"
+          {/* 2. CORE EDITORIAL FOOTER DIRECTORY */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 pt-4">
+            
+            {/* Column 1: Maison Identity & Salons (Span 4) */}
+            <div className="lg:col-span-4 space-y-6">
+              <Link href="/" className="inline-block space-y-3">
+                <VasundharaLogo
+                  variant="full"
+                  theme="dark"
+                  heightClass="h-12"
+                  href="/"
                 />
               </Link>
 
               <p className="font-sans text-xs text-[#EFE9DA]/70 leading-relaxed max-w-sm">
-                South India's premier maison of bespoke diamond heirlooms, uncut polki jewels, and master gold craftsmanship. Founded in 1997 by Mrs. Vasundhara Kasaraneni.
+                South India's premier maison of bespoke diamond heirlooms, uncut syndicate polki jewels, and master Nakshi gold craftsmanship. Founded in 1997 by visionary designer Mrs. Vasundhara Kasaraneni.
               </p>
 
-              <div className="pt-2 flex flex-col gap-2 text-xs text-[#EFE9DA]/80 font-sans">
-                <span className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-[#B09262] shrink-0" />
-                  Road No. 36, Jubilee Hills, Hyderabad, Telangana 500033
-                </span>
-                <span className="flex items-center gap-2">
+              {/* Verified Contact Details */}
+              <div className="space-y-3 pt-2 text-xs text-[#EFE9DA]/80 font-sans">
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-4 h-4 text-[#B09262] shrink-0 mt-0.5" />
+                  <span>Flagship Salon: Road No. 36, Jubilee Hills, Hyderabad, Telangana 500033</span>
+                </div>
+                <div className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-[#B09262] shrink-0" />
-                  +91 40 2355 8888 / +91 98490 12345
-                </span>
-                <span className="flex items-center gap-2">
+                  <span>+91 40 2355 8888 / +91 98490 12345</span>
+                </div>
+                <div className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-[#B09262] shrink-0" />
-                  concierge@vasundharadiamonds.com
-                </span>
+                  <span>concierge@vasundharadiamonds.com</span>
+                </div>
               </div>
             </div>
 
-            {/* Column 2: Collections */}
-            <div>
-              <h4 className="font-serif text-lg text-[#FDFBF7] mb-4 font-normal">Collections</h4>
+            {/* Column 2: High Jewellery & Collections (Span 3) */}
+            <div className="lg:col-span-3 space-y-4">
+              <h4 className="font-serif text-lg text-[#FDFBF7] font-normal tracking-wide flex items-center gap-2 border-b border-[#B09262]/20 pb-2">
+                <span>Collections</span>
+              </h4>
               <ul className="space-y-2.5 font-sans text-xs text-[#EFE9DA]/70">
                 <li>
-                  <Link href="/collections/eternal" className="hover:text-[#C6AA78] transition-colors">
-                    Eternal Solitaires
+                  <Link href="/collections" className="hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                    <span className="w-1 h-1 rounded-full bg-[#B09262]/50" />
+                    <span>Royal Bridal Trinity</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/collections/nizam-bridal-heritage" className="hover:text-[#C6AA78] transition-colors">
-                    Heritage Polki & Kundan
+                  <Link href="/collections" className="hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                    <span className="w-1 h-1 rounded-full bg-[#B09262]/50" />
+                    <span>Colombian Emerald Mesh Suite</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/collections/grace" className="hover:text-[#C6AA78] transition-colors">
-                    Grace Fine Gold
+                  <Link href="/collections" className="hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                    <span className="w-1 h-1 rounded-full bg-[#B09262]/50" />
+                    <span>Nizam Polki & Nakshi Chokers</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/collections/celestia" className="hover:text-[#C6AA78] transition-colors">
-                    Celestia Diamond Stars
+                  <Link href="/collections" className="hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                    <span className="w-1 h-1 rounded-full bg-[#B09262]/50" />
+                    <span>Temple Heirlooms & Peacock Haars</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/bespoke" className="hover:text-[#C6AA78] transition-colors">
-                    Bespoke Commissions
+                  <Link href="/collections" className="hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                    <span className="w-1 h-1 rounded-full bg-[#B09262]/50" />
+                    <span>Burmese Rubies & Imperial Jade</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/collections" className="hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                    <span className="w-1 h-1 rounded-full bg-[#B09262]/50" />
+                    <span>Flawless Solitaire Diamonds</span>
                   </Link>
                 </li>
               </ul>
             </div>
 
-            {/* Column 3: The Maison */}
-            <div>
-              <h4 className="font-serif text-lg text-[#FDFBF7] mb-4 font-normal">The Maison</h4>
+            {/* Column 3: The Maison & Atelier (Span 3) */}
+            <div className="lg:col-span-3 space-y-4">
+              <h4 className="font-serif text-lg text-[#FDFBF7] font-normal tracking-wide flex items-center gap-2 border-b border-[#B09262]/20 pb-2">
+                <span>The Maison</span>
+              </h4>
               <ul className="space-y-2.5 font-sans text-xs text-[#EFE9DA]/70">
                 <li>
-                  <Link href="/about" className="hover:text-[#C6AA78] transition-colors">
-                    Our Story & Artisans
+                  <Link href="/heritage" className="hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                    <span className="w-1 h-1 rounded-full bg-[#B09262]/50" />
+                    <span>The Nizam Legacy & Lineage</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/heritage" className="hover:text-[#C6AA78] transition-colors">
-                    Heritage Chapters
+                  <Link href="/bespoke" className="hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                    <span className="w-1 h-1 rounded-full bg-[#B09262]/50" />
+                    <span>Bespoke Bridal Atelier</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/events" className="hover:text-[#C6AA78] transition-colors">
-                    Events & Exhibitions
+                  <Link href="/experiences" className="hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                    <span className="w-1 h-1 rounded-full bg-[#B09262]/50" />
+                    <span>Grand Exhibitions & Soirees</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="hover:text-[#C6AA78] transition-colors">
-                    Hyderabad Showroom
+                  <Link href="/about" className="hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                    <span className="w-1 h-1 rounded-full bg-[#B09262]/50" />
+                    <span>Founder's Story — Mrs. Vasundhara</span>
                   </Link>
                 </li>
                 <li>
-                  <button onClick={() => setAppointmentOpen(true)} className="hover:text-[#C6AA78] transition-colors text-left cursor-pointer">
-                    Schedule Private Viewing
-                  </button>
+                  <Link href="/private-viewing" className="hover:text-[#D4AF37] transition-colors flex items-center gap-2 text-[#D4AF37] font-medium">
+                    <span className="w-1 h-1 rounded-full bg-[#D4AF37]" />
+                    <span>Book Private Viewing Chamber</span>
+                  </Link>
                 </li>
               </ul>
             </div>
 
-            {/* Column 4: Admin Portal Link */}
-            <div>
-              <h4 className="font-serif text-lg text-[#FDFBF7] mb-4 font-normal">Maison Services</h4>
-              <ul className="space-y-2.5 font-sans text-xs text-[#EFE9DA]/70">
-                <li>
-                  <Link href="/concierge" className="hover:text-[#C6AA78] transition-colors">
-                    AI Concierge Assistant
+            {/* Column 4: Certifications & Services (Span 2) */}
+            <div className="lg:col-span-2 space-y-4">
+              <h4 className="font-serif text-lg text-[#FDFBF7] font-normal tracking-wide flex items-center gap-2 border-b border-[#B09262]/20 pb-2">
+                <span>Provenance</span>
+              </h4>
+              <div className="space-y-3 font-sans text-xs text-[#EFE9DA]/70">
+                <div className="flex items-center gap-2.5 text-xs text-[#EFE9DA]">
+                  <ShieldCheck className="w-4 h-4 text-[#B09262] shrink-0" />
+                  <span>BIS 916/750 Gold Hallmark</span>
+                </div>
+                <div className="flex items-center gap-2.5 text-xs text-[#EFE9DA]">
+                  <Gem className="w-4 h-4 text-[#B09262] shrink-0" />
+                  <span>GIA & IGI Certified</span>
+                </div>
+                <div className="flex items-center gap-2.5 text-xs text-[#EFE9DA]">
+                  <Award className="w-4 h-4 text-[#B09262] shrink-0" />
+                  <span>Conflict-Free Diamonds</span>
+                </div>
+
+                <div className="pt-3">
+                  <Link
+                    href="/admin/login"
+                    className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#24211D] border border-[#B09262]/40 text-[#C6AA78] text-[10px] uppercase tracking-wider hover:bg-[#B09262] hover:text-white transition-colors"
+                  >
+                    <span>Maison Portal</span>
                   </Link>
-                </li>
-                <li>
-                  <Link href="/admin/login" className="px-3 py-1.5 bg-[#B09262]/20 border border-[#B09262]/40 text-[#C6AA78] rounded-full inline-block hover:bg-[#B09262] hover:text-white transition-colors">
-                    Vasundhara CMS Portal
-                  </Link>
-                </li>
-                <li className="pt-2 text-[11px] text-[#EFE9DA]/50">
-                  Secured with Supabase RBAC
-                </li>
-              </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* 3. BOTTOM VINTAGE DIVIDER & COPYRIGHT */}
+          <div className="pt-8 border-t border-[#B09262]/25 flex flex-col md:flex-row items-center justify-between gap-6 font-sans text-[11px] text-[#EFE9DA]/50">
+            <div className="flex items-center gap-4">
+              <p>© 1997–{new Date().getFullYear()} Maison Vasundhara Diamond Roof. All Royal Rights Reserved.</p>
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center gap-6">
+              <span className="hover:text-[#D4AF37] transition-colors cursor-pointer">Privacy Protocol</span>
+              <span className="hover:text-[#D4AF37] transition-colors cursor-pointer">Terms of Curation</span>
+              <span className="hover:text-[#D4AF37] transition-colors cursor-pointer">Bespoke Authenticity Certificate</span>
+              <button
+                onClick={scrollToTop}
+                aria-label="Back to Top"
+                className="flex items-center gap-1.5 text-[#D4AF37] hover:text-white transition-colors cursor-pointer pl-4"
+              >
+                <span>TOP</span>
+                <ArrowUp className="w-3.5 h-3.5" />
+              </button>
             </div>
           </div>
 
-          {/* Bottom Copyright */}
-          <div className="pt-8 border-t border-[#B09262]/20 flex flex-col sm:flex-row items-center justify-between gap-4 font-sans text-[11px] text-[#EFE9DA]/50">
-            <p>© {new Date().getFullYear()} Vasundhara Diamond Roof, Hyderabad. All Rights Reserved.</p>
-            <div className="flex items-center gap-6">
-              <span>Privacy Protocol</span>
-              <span>Terms of Curation</span>
-              <span>Bespoke Authenticity Certificate</span>
-            </div>
-          </div>
         </div>
       </footer>
 
