@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Sparkles, MapPin, Phone, Mail, ArrowRight, ShieldCheck, Crown, Gem, Award, ArrowUp } from "lucide-react";
+import { Sparkles, MapPin, Phone, Mail, ArrowRight, ShieldCheck, Crown, Gem, Award, ArrowUp, Instagram, Facebook, MessageCircle } from "lucide-react";
 import { AppointmentModal } from "@/components/luxury/AppointmentModal";
 import { VasundharaLogo } from "@/components/luxury/VasundharaLogo";
 
@@ -110,7 +110,7 @@ export function LuxuryFooter() {
                 South India's premier maison of bespoke diamond heirlooms, uncut syndicate polki jewels, and master Nakshi gold craftsmanship. Founded in 1997 by visionary designer Mrs. Vasundhara Kasaraneni.
               </p>
 
-              {/* Verified Contact Details */}
+              {/* Verified Contact Details with Official Social and Phone */}
               <div className="space-y-3 pt-2 text-xs text-[#EFE9DA]/80 font-sans">
                 <div className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 text-[#B09262] shrink-0 mt-0.5" />
@@ -118,12 +118,47 @@ export function LuxuryFooter() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-[#B09262] shrink-0" />
-                  <span>+91 40 2355 8888 / +91 98490 12345</span>
+                  <a href="tel:+919169165512" className="hover:text-[#D4AF37] transition-colors">
+                    +91 91691 65512
+                  </a>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-[#B09262] shrink-0" />
-                  <span>concierge@vasundharadiamonds.com</span>
+                  <a href="mailto:customercare@vasundhradiamondroof.com" className="hover:text-[#D4AF37] transition-colors">
+                    customercare@vasundhradiamondroof.com
+                  </a>
                 </div>
+              </div>
+
+              {/* Official Social Links */}
+              <div className="flex items-center gap-3 pt-2">
+                <a
+                  href="https://www.instagram.com/vasundharadiamondrf/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-full bg-[#24211D] border border-[#B09262]/40 flex items-center justify-center text-[#B09262] hover:bg-[#B09262] hover:text-white transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-4 h-4" />
+                </a>
+                <a
+                  href="https://www.facebook.com/VasundharaDiamondRoof"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-full bg-[#24211D] border border-[#B09262]/40 flex items-center justify-center text-[#B09262] hover:bg-[#B09262] hover:text-white transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-4 h-4" />
+                </a>
+                <a
+                  href="https://wa.me/919169165512"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-full bg-[#24211D] border border-[#B09262]/40 flex items-center justify-center text-[#B09262] hover:bg-[#B09262] hover:text-white transition-colors"
+                  aria-label="WhatsApp"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                </a>
               </div>
             </div>
 
@@ -235,7 +270,7 @@ export function LuxuryFooter() {
                     href="/admin/login"
                     className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#24211D] border border-[#B09262]/40 text-[#C6AA78] text-[10px] uppercase tracking-wider hover:bg-[#B09262] hover:text-white transition-colors"
                   >
-                    <span>Maison Portal</span>
+                    <span>Maison Admin Portal</span>
                   </Link>
                 </div>
               </div>
@@ -250,6 +285,9 @@ export function LuxuryFooter() {
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-6">
+              <Link href="/admin/login" className="text-[#C6AA78] hover:text-[#D4AF37] transition-colors">
+                Admin Panel
+              </Link>
               <span className="hover:text-[#D4AF37] transition-colors cursor-pointer">Privacy Protocol</span>
               <span className="hover:text-[#D4AF37] transition-colors cursor-pointer">Terms of Curation</span>
               <span className="hover:text-[#D4AF37] transition-colors cursor-pointer">Bespoke Authenticity Certificate</span>

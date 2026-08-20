@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Play, X } from "lucide-react";
 import { BorderTrail } from "@/components/core/border-trail";
+import { WaxSeal } from "@/components/core/wax-seal";
 
 export function CraftsmanshipSection() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -54,18 +55,18 @@ export function CraftsmanshipSection() {
               </div>
             </motion.div>
 
-            {/* Glowing Champagne Gold Border Beam (Zero Solid Blocks — Perimeter Line Only) */}
+            {/* Glowing Champagne Gold Border Beam */}
             <BorderTrail size={160} duration={6} />
           </motion.div>
 
-          {/* Right Column: Editorial Typography & Rotating Watch Control */}
+          {/* Right Column: Editorial Typography, 3D Molten Wax Seal & Video Story Control */}
           <div className="lg:col-span-6 space-y-8 lg:pl-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="flex items-start justify-between"
+              className="flex items-start justify-between gap-4"
             >
               {/* Eyebrow & Headline */}
               <div className="space-y-3">
@@ -85,7 +86,7 @@ export function CraftsmanshipSection() {
               {/* Circular "WATCH OUR STORY" Interactive Control */}
               <button
                 onClick={() => setVideoModalOpen(true)}
-                className="group relative flex flex-col items-center justify-center p-3 cursor-pointer shrink-0"
+                className="group relative flex flex-col items-center justify-center p-2 cursor-pointer shrink-0"
                 aria-label="Watch Craftsmanship Story Film"
               >
                 <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full border border-[#B09262]/40 group-hover:border-[#B09262] flex items-center justify-center transition-colors duration-500">
@@ -109,21 +110,40 @@ export function CraftsmanshipSection() {
               </button>
             </motion.div>
 
-            {/* Editorial Body Text */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-              className="space-y-4 font-sans text-xs sm:text-sm text-[#6E685F] leading-relaxed max-w-xl"
-            >
-              <p className="font-serif text-base sm:text-lg text-[#24211D] font-light italic leading-snug">
-                Every facet, every curve, every detail is shaped by passion and perfected by expertise.
-              </p>
-              <p>
-                In our private ateliers, master goldsmiths execute ancient Nakshi engraving and miniature Kundan stone-setting entirely by hand. No machines, no shortcuts—only pure devotion to the art of fine Indian jewellery.
-              </p>
-            </motion.div>
+            {/* Editorial Body Text & 3D Interactive Molten Gold Wax Seal */}
+            <div className="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+                className="sm:col-span-8 space-y-4 font-sans text-xs sm:text-sm text-[#6E685F] leading-relaxed"
+              >
+                <p className="font-serif text-base sm:text-lg text-[#24211D] font-light italic leading-snug">
+                  Every facet, every curve, every detail is shaped by passion and perfected by expertise.
+                </p>
+                <p>
+                  In our private ateliers, master goldsmiths execute ancient Nakshi engraving and miniature Kundan stone-setting entirely by hand. No machines, no shortcuts—only pure devotion to the art of fine Indian jewellery.
+                </p>
+              </motion.div>
+
+              {/* 3D Molten Gold Wax Seal with Vasundhara Royal Crest */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.85 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 1.0, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+                className="sm:col-span-4 flex justify-center sm:justify-end"
+              >
+                <div className="w-32 h-32 sm:w-36 sm:h-36 relative">
+                  <WaxSeal
+                    waxColor="#D4AF37"
+                    logo="/brand/vasundhara-emblem-dark.png"
+                    className="w-full h-full drop-shadow-xl"
+                  />
+                </div>
+              </motion.div>
+            </div>
 
             {/* CTA */}
             <motion.div
@@ -147,9 +167,9 @@ export function CraftsmanshipSection() {
         </div>
       </div>
 
-      {/* Video Modal Overlay */}
+      {/* Video Modal Overlay with Official YouTube Link */}
       {videoModalOpen && (
-        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-[#24211D]/90 backdrop-blur-md p-6">
+        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-[#24211D]/90 backdrop-blur-md p-4 sm:p-6">
           <div className="relative w-full max-w-4xl bg-[#1C1A17] rounded-2xl overflow-hidden border border-[#B09262]/40 shadow-2xl">
             <button
               onClick={() => setVideoModalOpen(false)}
@@ -159,11 +179,12 @@ export function CraftsmanshipSection() {
               <X className="w-5 h-5" />
             </button>
             <div className="aspect-video w-full">
-              <video
-                src="https://assets.mixkit.co/videos/preview/mixkit-luxury-diamond-ring-glimmering-in-light-42867-large.mp4"
-                autoPlay
-                controls
-                className="w-full h-full object-cover"
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/Nwd-WHEFKno?autoplay=1&rel=0&modestbranding=1"
+                title="Vasundhara Diamond Roof Story Film"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="w-full h-full border-0"
               />
             </div>
           </div>
