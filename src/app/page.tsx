@@ -33,8 +33,8 @@ export default function Homepage() {
       {/* Global Luxury Header */}
       <LuxuryHeader theme="auto" />
 
-      {/* 1. Cinematic Hero (Rendered already underneath the loader) */}
-      <CinematicHero />
+      {/* 1. Cinematic Hero (Starts video playback from 0s once loader dissolves) */}
+      <CinematicHero isPlaying={isLoaderComplete} isVisible={true} />
 
       {/* 2. Brand Introduction / Our Story */}
       <BrandIntroSection />

@@ -29,37 +29,39 @@ export function BrandIntroSection() {
             transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
             className="lg:col-span-6"
           >
-            <div className="relative aspect-[4/5] sm:aspect-[1/1] lg:aspect-[4/5] rounded-t-[140px] sm:rounded-t-[180px] rounded-b-2xl overflow-hidden bg-gradient-to-b from-[#FDFBF7] via-[#EFE9DA] to-[#E3DAC8] border border-[#B09262]/30 shadow-2xl p-6 sm:p-10 flex flex-col items-center justify-between">
+            <div className="relative aspect-[4/5] sm:aspect-[1/1] lg:aspect-[4/5] rounded-t-[140px] sm:rounded-t-[180px] rounded-b-2xl overflow-hidden border border-[#B09262]/35 shadow-2xl bg-[#24211D] group">
               
-              {/* Concentric Arches */}
-              <div className="absolute inset-4 rounded-t-[125px] sm:rounded-t-[160px] rounded-b-xl border border-[#B09262]/20 pointer-events-none" />
-              <div className="absolute inset-8 rounded-t-[110px] sm:rounded-t-[140px] rounded-b-lg border border-[#B09262]/15 pointer-events-none" />
-              <div className="absolute inset-12 rounded-t-[95px] sm:rounded-t-[120px] rounded-b-md border border-[#B09262]/10 pointer-events-none" />
+              {/* Full Bleed Heritage Portrait */}
+              <img
+                src="/brand/vasundhara-temple-heritage-bride.jpg"
+                alt="Vasundhara Temple Jewellery Heritage - Royal Indian Bride in Blue Silk"
+                className="w-full h-full object-cover object-top transform transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105"
+              />
 
-              {/* Top Inscription */}
-              <div className="relative z-10 pt-4 flex flex-col items-center">
-                <span className="font-sans text-[9px] uppercase tracking-[0.4em] text-[#B09262] font-medium">
+              {/* Concentric Architectural Gold Arches Overlay */}
+              <div className="absolute inset-3 sm:inset-4 rounded-t-[125px] sm:rounded-t-[160px] rounded-b-xl border border-[#B09262]/35 pointer-events-none" />
+              <div className="absolute inset-6 sm:inset-8 rounded-t-[110px] sm:rounded-t-[140px] rounded-b-lg border border-[#FDFBF7]/20 pointer-events-none" />
+
+              {/* Gradient Vignettes for Text Legibility */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#24211D]/80 via-transparent to-[#24211D]/50 pointer-events-none" />
+
+              {/* Top Inscription Glass Pill */}
+              <div className="absolute top-6 inset-x-0 z-10 flex justify-center px-4">
+                <span className="px-4 py-1.5 rounded-full bg-[#24211D]/70 backdrop-blur-md border border-[#B09262]/40 font-sans text-[8px] sm:text-[9px] uppercase tracking-[0.35em] text-[#EFE9DA] font-medium shadow-lg">
                   MAISON VASUNDHARA • HYDERABAD
                 </span>
               </div>
 
-              {/* Centerpiece: Official Vasundhara Gold Emblem Artwork */}
-              <div className="relative z-10 my-auto flex flex-col items-center justify-center space-y-4">
-                <div className="relative p-6 sm:p-8 rounded-full bg-[#FDFBF7]/60 backdrop-blur-sm border border-[#B09262]/30 shadow-inner">
-                  <img
-                    src="/brand/vasundhara-emblem-tight.png"
-                    alt="Official Vasundhara Emblem"
-                    className="h-20 sm:h-24 md:h-28 w-auto object-contain drop-shadow-[0_4px_12px_rgba(176,146,98,0.18)]"
-                  />
+              {/* Bottom Inscription Glass Banner */}
+              <div className="absolute bottom-6 inset-x-6 z-10 text-center">
+                <div className="p-3 rounded-xl bg-[#24211D]/75 backdrop-blur-md border border-[#B09262]/35 shadow-xl space-y-0.5">
+                  <span className="font-serif text-xs sm:text-sm italic tracking-[0.15em] text-[#FDFBF7] block">
+                    Est. April 1997 • Master Karigar Lineage
+                  </span>
+                  <span className="font-sans text-[8px] uppercase tracking-[0.25em] text-[#C6AA78] block">
+                    Temple Heritage & Royal South Indian Goldsmithing
+                  </span>
                 </div>
-                <div className="w-28 sm:w-36 h-1.5 rounded-full bg-gradient-to-r from-transparent via-[#B09262]/35 to-transparent" />
-              </div>
-
-              {/* Bottom Inscription */}
-              <div className="relative z-10 pb-2 text-center">
-                <span className="font-serif text-xs italic tracking-[0.2em] text-[#6E685F]">
-                  Est. April 1997 • Master Karigar Lineage
-                </span>
               </div>
             </div>
           </motion.div>

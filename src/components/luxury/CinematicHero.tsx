@@ -12,6 +12,7 @@ interface CinematicHeroProps {
   title?: string;
   headline?: string;
   isVisible?: boolean;
+  isPlaying?: boolean;
 }
 
 export function CinematicHero({
@@ -21,6 +22,7 @@ export function CinematicHero({
   title = "VASUNDHARA",
   headline = "Where Heritage Meets Timeless Brilliance",
   isVisible = true,
+  isPlaying = true,
 }: CinematicHeroProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -33,12 +35,20 @@ export function CinematicHero({
   const mediaY = useTransform(scrollYProgress, [0, 1], ["0%", "8%"]);
 
   useEffect(() => {
-    if (videoRef.current) {
+    if (!videoRef.current) return;
+
+    if (isPlaying) {
+      videoRef.current.currentTime = 0;
       videoRef.current.play().catch(() => {
         // Autoplay fallback
       });
+    } else {
+      videoRef.current.pause();
+      try {
+        videoRef.current.currentTime = 0;
+      } catch (e) {}
     }
-  }, [videoUrl]);
+  }, [isPlaying, videoUrl]);
 
   return (
     <section
