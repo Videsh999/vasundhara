@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { RippleCard } from "@/components/core/ripple-card";
 
 export function BespokeJourneySection() {
   return (
@@ -52,29 +53,35 @@ export function BespokeJourneySection() {
             </div>
           </motion.div>
 
-          {/* Visual Column */}
+          {/* Visual Column — Ripple Water WebGL Card */}
           <motion.div
             initial={{ opacity: 0, y: 35, scale: 1.025 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 1.1, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:col-span-7 relative aspect-[16/11] sm:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-[#B09262]/30 group bg-[#FDFBF7]"
+            className="lg:col-span-7 relative"
           >
-            <img
-              src="/brand/vasundhara-crimson-bridal-emerald.jpg"
-              alt="Vasundhara Bespoke Jewellery Commission - Crimson Emerald Suite"
-              loading="lazy"
-              className="w-full h-full object-cover transform transition-transform duration-800 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.035]"
+            <RippleCard
+              src="/brand/vasundhara-nizam-rajmata-polki-portrait.jpg"
+              alt="Vasundhara Bespoke Commission — Nizam Rajmata Polki Portrait"
+              intensity={90}
+              size={55}
+              rounded={18}
+              className="w-full aspect-[16/11] sm:aspect-[4/3] shadow-2xl border border-[#B09262]/30"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#24211D]/60 via-transparent to-transparent opacity-70 pointer-events-none" />
-            <div className="absolute bottom-6 left-6 right-6 text-[#FDFBF7]">
+
+            {/* Caption overlay on top of canvas */}
+            <div className="absolute bottom-6 left-6 right-6 pointer-events-none z-10">
               <span className="font-sans text-[9px] uppercase tracking-[0.3em] text-[#C6AA78] font-medium block">
                 PRIVATE ATELIER CONSULTATION
               </span>
-              <span className="font-serif text-lg text-[#FDFBF7] font-light">
+              <span className="font-serif text-lg text-[#FDFBF7] font-light drop-shadow-lg">
                 Hand-Drawn Gouache to Master Goldsmithing
               </span>
             </div>
+
+            {/* Gradient bottom fade */}
+            <div className="absolute inset-0 rounded-[18px] bg-gradient-to-t from-[#24211D]/65 via-transparent to-transparent pointer-events-none z-[5]" />
           </motion.div>
 
         </div>
