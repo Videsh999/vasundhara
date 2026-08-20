@@ -113,6 +113,27 @@ export function LuxuryHeader({ theme = "auto", isVisible = true }: LuxuryHeaderP
           {/* CENTER: Direct Navigation Links + Refined Collections Trigger */}
           <nav className="hidden lg:flex items-center gap-8 xl:gap-11">
             
+            {/* 0. HOME */}
+            <Link
+              href="/"
+              className={`relative font-sans text-[11px] xl:text-xs uppercase tracking-[0.24em] font-medium transition-colors py-1 ${
+                pathname === "/"
+                  ? "text-[#B09262]"
+                  : isLightMode
+                  ? "text-[#24211D]/90 hover:text-[#B09262]"
+                  : "text-[#FDFBF7]/90 hover:text-white"
+              }`}
+            >
+              <span>HOME</span>
+              {pathname === "/" && (
+                <motion.div
+                  layoutId="activeNavUnderline"
+                  className="absolute bottom-0 left-0 right-0 h-[1px] bg-[#B09262]"
+                  transition={{ duration: 0.3 }}
+                />
+              )}
+            </Link>
+
             {/* 1. COLLECTIONS Dropdown Item */}
             <div
               className="relative"
@@ -353,6 +374,17 @@ export function LuxuryHeader({ theme = "auto", isVisible = true }: LuxuryHeaderP
             className="fixed inset-0 z-50 bg-[#F7F3EA] text-[#24211D] flex flex-col justify-between p-8 pt-24 overflow-y-auto lg:hidden select-none"
           >
             <div className="flex flex-col gap-6 pt-4">
+              <Link
+                href="/"
+                onClick={() => setMobileMenuOpen(false)}
+                className={`font-serif text-3xl sm:text-4xl uppercase tracking-wider transition-colors py-2 border-b border-[#B09262]/20 flex items-center justify-between ${
+                  pathname === "/" ? "text-[#B09262]" : "text-[#24211D]"
+                }`}
+              >
+                <span>HOME</span>
+                {pathname === "/" && <span className="text-xs font-sans text-[#B09262] tracking-widest">CURRENT</span>}
+              </Link>
+
               <Link
                 href="/collections"
                 onClick={() => setMobileMenuOpen(false)}

@@ -11,6 +11,7 @@ import { CraftsmanshipSection } from "@/components/luxury/CraftsmanshipSection";
 import { FeaturedJewellerySection } from "@/components/luxury/FeaturedJewellerySection";
 import { HeritageStorySection } from "@/components/luxury/HeritageStorySection";
 import { BespokeJourneySection } from "@/components/luxury/BespokeJourneySection";
+import { MasterpieceInfiniteShowcase } from "@/components/luxury/MasterpieceInfiniteShowcase";
 import { ExperiencesSection } from "@/components/luxury/ExperiencesSection";
 import { TestimonialsSection } from "@/components/luxury/TestimonialsSection";
 import { PrivateViewingSection } from "@/components/luxury/PrivateViewingSection";
@@ -57,7 +58,10 @@ export default function Homepage() {
       {/* 8. Bespoke Experience */}
       <BespokeJourneySection />
 
-      {/* 9. Events & Exhibitions */}
+      {/* 9. Infinite Stream Masterpiece Showcase */}
+      <MasterpieceInfiniteShowcase />
+
+      {/* 10. Events & Exhibitions */}
       <ExperiencesSection events={MOCK_EVENTS} />
 
       {/* 10. Testimonials */}
