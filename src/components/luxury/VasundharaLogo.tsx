@@ -40,7 +40,7 @@ export function VasundharaLogo({
   theme = "light",
   heightClass,
   className = "",
-  href = "/",
+  href = "/?intro=true",
   alt = "Vasundhara Diamond Roof — Countless Tales of Precious",
   "aria-hidden": ariaHidden,
 }: VasundharaLogoProps) {
@@ -59,6 +59,12 @@ export function VasundharaLogo({
       setImgSrc(fallback);
     } else {
       setUseTypographyFallback(true);
+    }
+  };
+
+  const handleLogoClick = () => {
+    if (typeof window !== "undefined" && href?.includes("intro=true")) {
+      sessionStorage.removeItem("vdr_has_seen_intro");
     }
   };
 
@@ -107,7 +113,8 @@ export function VasundharaLogo({
   return (
     <Link
       href={href}
-      className="inline-flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8C734B]/60 rounded shrink-0"
+      onClick={handleLogoClick}
+      className="inline-flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8C734B]/60 rounded shrink-0 cursor-pointer"
       aria-label={ariaHidden ? undefined : "Vasundhara Diamond Roof — Home"}
     >
       {wrapped}

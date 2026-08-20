@@ -17,7 +17,7 @@ const BESPOKE_STAGES = [
     description:
       "The bespoke journey begins with an intimate dialogue. We explore your family heritage, aesthetic preferences, and the emotion of the occasion.",
     details: "Private Dialogue • Gemstone Curation • Occasion Blueprint",
-    image: "/brand/vasundhara-royal-bride-portrait.jpg",
+    image: "/brand/vasundhara-crimson-bridal-emerald.jpg",
     icon: Compass,
   },
   {
@@ -25,9 +25,9 @@ const BESPOKE_STAGES = [
     stepName: "CONSULT",
     title: "Exploring Inspiration & Rare Gems",
     description:
-      "Our senior curators present rare uncut syndicate polki diamonds, D-flawless solitaires, and natural gemstone parcels curated specifically for your commission.",
+      "Our senior curators present rare uncut syndicate polki diamonds, D-flawless solitaires, and natural Colombian emerald parcels curated specifically for your commission.",
     details: "Gem Selection • Proportion Balance • Metal Purity (18K/22K)",
-    image: "/brand/vasundhara-masterpiece-jewellery.jpg",
+    image: "/brand/vasundhara-emerald-solitaire-bib-suite.jpg",
     icon: Gem,
   },
   {
@@ -35,9 +35,9 @@ const BESPOKE_STAGES = [
     stepName: "DESIGN",
     title: "Hand-Drawn Gouache Renderings",
     description:
-      "Master illustrators hand-paint multiple full-scale gouache parchment renderings, translating abstract ideas into sculptural high jewellery.",
+      "Master illustrators hand-paint multiple full-scale gouache parchment renderings, translating abstract ideas into sculptural high contemporary joaillerie.",
     details: "Parchment Art • Ergonomic Blueprint • 1:1 Scale Proofs",
-    image: "/brand/vasundhara-temple-peacock-necklace.jpg",
+    image: "/brand/vasundhara-imperial-jade-high-jewellery.jpg",
     icon: Feather,
   },
   {
@@ -45,9 +45,9 @@ const BESPOKE_STAGES = [
     stepName: "CRAFT",
     title: "Master Karigar Goldsmithing",
     description:
-      "Hereditary master artisans hand-chisel the Nakshi gold structures, craft pure 24K gold foil Kundan encasements, and hand-string natural Basra pearls.",
+      "Hereditary master artisans hand-chisel the gold structures, craft pure 24K gold foil Kundan encasements, and hand-string pigeon-blood rubies and diamonds.",
     details: "Zero Machine Work • Pure Hand Setting • Devotional Craft",
-    image: "/brand/vasundhara-emerald-diamond-kada.jpg",
+    image: "/brand/vasundhara-ruby-diamond-bangles.jpg",
     icon: Hammer,
   },
   {
@@ -55,9 +55,9 @@ const BESPOKE_STAGES = [
     stepName: "REVEAL",
     title: "Private Salon Unveiling",
     description:
-      "Your finished heirloom is unveiled in a private chamber at our Jubilee Hills salon, accompanied by certified documentation and custom vault casing.",
+      "Your finished heirloom is unveiled in a private chamber at our Jubilee Hills salon, accompanied by certified documentation and custom velvet vault casing.",
     details: "Private Chamber Unveiling • Certified Documentation • Heirloom Casing",
-    image: "/brand/vasundhara-nizam-emerald-polki-suite.jpg",
+    image: "/brand/vasundhara-masterpiece-jewellery.jpg",
     icon: Gift,
   },
 ];
@@ -70,8 +70,15 @@ export default function BespokePage() {
       <LuxuryHeader theme="light" />
 
       {/* 1. HERO */}
-      <section className="pt-36 sm:pt-44 pb-20 sm:pb-28 bg-[#F7F3EA] border-b border-[#B09262]/20">
-        <div className="max-w-4xl mx-auto px-6 text-center space-y-4">
+      <section className="pt-36 sm:pt-44 pb-20 sm:pb-28 bg-[#F7F3EA] border-b border-[#B09262]/20 relative overflow-hidden">
+        {/* Subtle Background Watermark */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-[0.03] select-none">
+          <span className="font-serif text-[20vw] uppercase tracking-widest text-[#B09262] whitespace-nowrap">
+            BESPOKE
+          </span>
+        </div>
+
+        <div className="max-w-4xl mx-auto px-6 text-center space-y-4 relative z-10">
           <motion.span
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -101,11 +108,12 @@ export default function BespokePage() {
         </div>
       </section>
 
-      {/* 2. THE 5-STAGE BESPOKE TIMELINE */}
-      <section className="py-20 sm:py-28 max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 space-y-20">
+      {/* 2. STAGES */}
+      <section className="py-20 sm:py-28 max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 space-y-24">
         {BESPOKE_STAGES.map((stage, idx) => {
           const isEven = idx % 2 === 1;
-          const Icon = stage.icon;
+          const IconComp = stage.icon;
+
           return (
             <motion.div
               key={stage.num}
@@ -119,7 +127,7 @@ export default function BespokePage() {
             >
               {/* Media Visual */}
               <div
-                className={`lg:col-span-6 relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl border border-[#B09262]/25 bg-[#F7F3EA] group ${
+                className={`lg:col-span-6 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-[#B09262]/35 bg-[#24211D] group ${
                   isEven ? "lg:col-start-7" : ""
                 }`}
               >
@@ -127,35 +135,41 @@ export default function BespokePage() {
                   src={stage.image}
                   alt={stage.title}
                   loading="lazy"
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                  className="w-full h-full object-cover object-center transform transition-transform duration-1000 group-hover:scale-105"
                 />
-                <div className="absolute top-4 left-4 px-3 py-1 bg-[#FDFBF7]/90 backdrop-blur-md rounded-full text-[9px] uppercase tracking-widest text-[#B09262] font-semibold border border-[#B09262]/20">
-                  STAGE {stage.num} • {stage.stepName}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1C1A17]/70 via-transparent to-transparent" />
+                <div className="absolute top-4 left-4 flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#1C1A17]/70 backdrop-blur-md border border-[#B09262]/40 text-[#D4AF37] font-sans text-[9px] uppercase tracking-[0.25em] font-semibold">
+                  <IconComp className="w-3 h-3 text-[#D4AF37]" />
+                  <span>STEP {stage.num} • {stage.stepName}</span>
                 </div>
               </div>
 
               {/* Text Narrative */}
-              <div className={`lg:col-span-6 space-y-4 ${isEven ? "lg:col-start-1" : ""}`}>
-                <div className="space-y-1">
-                  <div className="flex items-center gap-2.5 text-[#B09262]">
-                    <Icon className="w-4 h-4" />
-                    <span className="font-sans text-[10px] uppercase tracking-[0.3em] font-semibold">
-                      {stage.stepName}
-                    </span>
-                  </div>
-                  <h2 className="font-serif text-3xl sm:text-4xl text-[#24211D] font-light">
-                    {stage.title}
-                  </h2>
+              <div
+                className={`lg:col-span-6 space-y-6 ${
+                  isEven ? "lg:col-start-1" : ""
+                }`}
+              >
+                <div className="flex items-center gap-3">
+                  <span className="font-serif text-3xl sm:text-4xl text-[#B09262] font-light">
+                    {stage.num}
+                  </span>
+                  <div className="h-[1px] w-12 bg-[#B09262]/40" />
+                  <span className="font-sans text-[10px] sm:text-xs uppercase tracking-[0.25em] text-[#6E685F] font-semibold">
+                    {stage.stepName}
+                  </span>
                 </div>
+
+                <h2 className="font-serif text-3xl sm:text-4xl text-[#24211D] font-light leading-snug">
+                  {stage.title}
+                </h2>
 
                 <p className="font-sans text-xs sm:text-sm text-[#6E685F] leading-relaxed">
                   {stage.description}
                 </p>
 
-                <div className="pt-2 border-t border-[#B09262]/15">
-                  <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-[#B09262] font-medium">
-                    {stage.details}
-                  </span>
+                <div className="p-4 rounded-xl bg-[#EFE9DA]/60 border border-[#B09262]/20 font-sans text-[11px] uppercase tracking-wider text-[#B09262] font-semibold">
+                  {stage.details}
                 </div>
               </div>
             </motion.div>
@@ -164,29 +178,29 @@ export default function BespokePage() {
       </section>
 
       {/* 3. CTA */}
-      <section className="py-24 bg-[#24211D] text-[#FDFBF7] text-center border-t border-[#B09262]/25">
-        <div className="max-w-3xl mx-auto px-6 space-y-6">
+      <section className="py-20 sm:py-28 bg-[#F7F3EA] border-t border-[#B09262]/20 text-center select-none">
+        <div className="max-w-2xl mx-auto px-6 space-y-8">
           <Sparkles className="w-6 h-6 text-[#B09262] mx-auto" />
-          <h2 className="font-serif text-3xl sm:text-5xl text-[#FDFBF7] font-light">
-            Begin Your Bespoke Journey
+          <h2 className="font-serif text-3xl sm:text-5xl text-[#24211D] font-light">
+            Begin Your Commission
           </h2>
-          <p className="font-serif text-base sm:text-xl italic text-[#EFE9DA]/90 max-w-xl mx-auto">
-            "Every commission begins with a blank parchment and personal dialogue."
+          <p className="font-sans text-xs sm:text-sm text-[#6E685F] leading-relaxed">
+            Every bespoke creation begins with a private conversation. Connect with our master design team in Jubilee Hills or request a private virtual consultation.
           </p>
-
-          <button
-            onClick={() => setAppointmentOpen(true)}
-            className="inline-flex items-center gap-2.5 px-8 py-4 bg-[#B09262] hover:bg-[#C6AA78] text-[#FDFBF7] font-sans text-xs uppercase tracking-[0.25em] font-medium rounded-full shadow-2xl transition-all cursor-pointer"
-          >
-            <span>REQUEST BESPOKE CONSULTATION</span>
-            <ArrowRight className="w-4 h-4" />
-          </button>
+          <div className="pt-2">
+            <button
+              onClick={() => setAppointmentOpen(true)}
+              className="px-10 py-4 bg-[#24211D] hover:bg-[#B09262] text-[#FDFBF7] font-sans text-xs uppercase tracking-[0.25em] font-medium rounded-full transition-all duration-300 shadow-xl hover:scale-105 cursor-pointer"
+            >
+              REQUEST BESPOKE CONSULTATION
+            </button>
+          </div>
         </div>
       </section>
 
-      <AppointmentModal isOpen={appointmentOpen} onClose={() => setAppointmentOpen(false)} />
-      <FloatingExperienceControls />
       <LuxuryFooter />
+      <FloatingExperienceControls />
+      <AppointmentModal isOpen={appointmentOpen} onClose={() => setAppointmentOpen(false)} />
     </main>
   );
 }

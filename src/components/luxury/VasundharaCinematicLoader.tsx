@@ -79,9 +79,22 @@ export function VasundharaCinematicLoader({
     }
   }, [loaderState]);
 
-  // Autoplay trigger & timeout safeguards
+  // Autoplay trigger, session check & timeout safeguards
   useEffect(() => {
     if (typeof window === "undefined") return;
+
+    // Check if forceIntro param is present in URL (e.g. user clicked brand logo)
+    const urlParams = new URLSearchParams(window.location.search);
+    const forceIntro = urlParams.get("intro") === "true";
+    const hasSeen = sessionStorage.getItem("vdr_has_seen_intro");
+
+    if (hasSeen && !forceIntro) {
+      setLoaderState("COMPLETE");
+      onComplete?.();
+      return;
+    }
+
+    sessionStorage.setItem("vdr_has_seen_intro", "true");
 
     // Check reduced motion preference
     const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -110,7 +123,7 @@ export function VasundharaCinematicLoader({
       if (holdTimerRef.current) clearTimeout(holdTimerRef.current);
       if (revealTimerRef.current) clearTimeout(revealTimerRef.current);
     };
-  }, [maxTimeoutMs, triggerExit]);
+  }, [maxTimeoutMs, triggerExit, onComplete]);
 
   // Video Event Handlers
   const handleVideoEnded = () => {
