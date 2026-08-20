@@ -97,14 +97,14 @@ export function LuxuryFooter() {
             
             {/* Column 1: Maison Identity & Salons (Span 4) */}
             <div className="lg:col-span-4 space-y-6">
-              <Link href="/" className="inline-block space-y-3">
+              <div className="inline-block space-y-3">
                 <VasundharaLogo
                   variant="full"
                   theme="dark"
                   heightClass="h-12"
-                  href="/"
+                  href="/?intro=true"
                 />
-              </Link>
+              </div>
 
               <p className="font-sans text-xs text-[#EFE9DA]/70 leading-relaxed max-w-sm">
                 South India's premier maison of bespoke diamond heirlooms, uncut syndicate polki jewels, and master Nakshi gold craftsmanship. Founded in 1997 by visionary designer Mrs. Vasundhara Kasaraneni.

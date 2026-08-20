@@ -102,12 +102,12 @@ export function LuxuryHeader({ theme = "auto", isVisible = true }: LuxuryHeaderP
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 flex items-center justify-between">
           
-          {/* LEFT: Vasundhara Official Brand Logo */}
+          {/* LEFT: Vasundhara Official Brand Logo (Replays intro on click) */}
           <VasundharaLogo
             variant="full"
             theme={isLightMode ? "light" : "dark"}
             heightClass="h-10 md:h-12"
-            href="/"
+            href="/?intro=true"
           />
 
           {/* CENTER: Direct Navigation Links + Refined Collections Trigger */}
