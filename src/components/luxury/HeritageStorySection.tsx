@@ -10,8 +10,8 @@ const HERITAGE_CUBE_ITEMS: CarouselItem[] = [
   {
     id: 1,
     type: "image",
-    srcUrl: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=1200",
-    alt: "Master Karigar Setting Polki Diamond in 22K Gold Foil",
+    srcUrl: "/brand/vasundhara-masterpiece-jewellery.jpg",
+    alt: "Vasundhara Masterpiece Diamond & Gold Bridal Collection",
     title: "ATELIER ARCHIVES • HYDERABAD",
     subtitle: "Nearly Three Decades of Indian Goldsmithing",
   },
@@ -26,10 +26,10 @@ const HERITAGE_CUBE_ITEMS: CarouselItem[] = [
   {
     id: 3,
     type: "image",
-    srcUrl: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=1200",
-    alt: "High Jewellery Zambian & Colombian Emerald Setting",
+    srcUrl: "/brand/vasundhara-masterpiece-jewellery.jpg",
+    alt: "Vasundhara Royal Solitaires, Necklaces & Bangles Suite on Silk",
     title: "GEMOLOGICAL PURITY",
-    subtitle: "Natural Emeralds & Rare Solitaires",
+    subtitle: "Natural Diamonds & Rare Solitaires",
   },
   {
     id: 4,

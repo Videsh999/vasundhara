@@ -7,6 +7,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { GalleryTunnel } from "@/components/core/gallery-tunnel";
 
 const FEATURED_TUNNEL_IMAGES = [
+  "/brand/vasundhara-masterpiece-jewellery.jpg",
   "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=1200",
   "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=1200",
   "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=1200",

@@ -51,8 +51,8 @@ export function HeritageStory() {
           >
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-luxury border border-[#8C734B]/20">
               <img
-                src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=1200"
-                alt="Vasundhara Master Craftsman Setting Polki Diamond"
+                src="/brand/vasundhara-masterpiece-jewellery.jpg"
+                alt="Vasundhara Masterpiece Diamond & Gold Bridal Suite"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1C1A17]/60 via-transparent to-transparent" />
