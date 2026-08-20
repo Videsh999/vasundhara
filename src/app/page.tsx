@@ -27,7 +27,7 @@ export default function Homepage() {
       {/* 0. Official Vasundhara Cinematic Loading Film (Dissolves softly into Hero) */}
       <VasundharaCinematicLoader
         desktopVideoSrc="/brand/vdr-loading-film.mp4"
-        mobileVideoSrc="/brand/vdr-loading-film-mobile.mp4"
+        mobileVideoSrc="/brand/vdr-loading-film.mp4"
         onComplete={() => setIsLoaderComplete(true)}
       />
 

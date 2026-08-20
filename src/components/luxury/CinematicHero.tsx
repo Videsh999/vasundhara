@@ -51,10 +51,10 @@ export function CinematicHero({
   }, [isPlaying, videoUrl]);
 
   return (
-    <section
-      ref={containerRef}
-      className="relative w-full h-[100svh] min-h-[650px] flex items-center justify-center overflow-hidden bg-[#1C1A17] text-[#FDFBF7] select-none"
-    >
+      <section
+        ref={containerRef}
+        className="relative w-full h-[100svh] min-h-[500px] sm:min-h-[650px] flex items-center justify-center overflow-hidden bg-[#1C1A17] text-[#FDFBF7] select-none"
+      >
       {/* 1. Cinematic Background Media with Initial Scale (1.06 -> 1.0) & Subtle Parallax */}
       <motion.div
         style={{ y: mediaY }}

@@ -25,6 +25,8 @@ interface VasundharaCinematicLoaderProps {
   maxTimeoutMs?: number;
 }
 
+let globalHasSeenIntro = false;
+
 export function VasundharaCinematicLoader({
   videoSrc,
   fallbackVideoSrc = "/videos/vasundhara_loading.mp4",
@@ -86,15 +88,14 @@ export function VasundharaCinematicLoader({
     // Check if forceIntro param is present in URL (e.g. user clicked brand logo)
     const urlParams = new URLSearchParams(window.location.search);
     const forceIntro = urlParams.get("intro") === "true";
-    const hasSeen = sessionStorage.getItem("vdr_has_seen_intro");
 
-    if (hasSeen && !forceIntro) {
+    if (globalHasSeenIntro && !forceIntro) {
       setLoaderState("COMPLETE");
       onComplete?.();
       return;
     }
 
-    sessionStorage.setItem("vdr_has_seen_intro", "true");
+    globalHasSeenIntro = true;
 
     // Check reduced motion preference
     const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
